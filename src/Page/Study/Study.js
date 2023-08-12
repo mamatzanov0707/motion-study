@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Hero = () => {
+const Study = () => {
     return (
         <div>
-            hero
+            Study
         </div>
     );
 };
 
-export default Hero;
+export default Study;
