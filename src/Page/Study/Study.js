@@ -1,6 +1,7 @@
 import React from 'react';
 import './Study.scss'
 import map from '../../img/map.svg'
+import {Link, NavLink} from "react-router-dom";
 
 const Study = () => {
     return (
@@ -20,30 +21,26 @@ const Study = () => {
                                 professional development programmes for teachers <br/>
                                 and specialists of companies and organizations.</p>
                             <p>
-                               <span> Our partners include:</span> <br/>
-                                -	Universities and higher education establishments. <br/>
-                                -	Private schools and colleges. <br/>
-                                -	State schools and colleges. <br/>
-                                -	World known language schools for adults. <br/>
-                                -	International language schools for 7-18 y.o. schoolchildren. <br/>
-                                -	Business schools <br/>
-                                -	Executive centres <br/>
-                                -	Summer camps <br/>
-                                -	Guardianship companies <br/>
-                                <button>Explore</button>
+                                <span> Our partners include:</span> <br/>
+                                - Universities and higher education establishments. <br/>
+                                - Private schools and colleges. <br/>
+                                - State schools and colleges. <br/>
+                                - World known language schools for adults. <br/>
+                                - International language schools for 7-18 y.o. schoolchildren. <br/>
+                                - Business schools <br/>
+                                - Executive centres <br/>
+                                - Summer camps <br/>
+                                - Guardianship companies <br/>
+                                <NavLink to={'/flag'}>
+                                    <button>Explore</button>
+                                </NavLink>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-import Flag from '../../components/Flag';
-
-const Study = () => {
-    return (
-        <div>
-            <Flag/>
         </div>
-    );
-};
+    )
+}
 
 export default Study;
