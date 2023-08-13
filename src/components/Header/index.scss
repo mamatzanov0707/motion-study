@@ -1,7 +1,7 @@
 #header {
   -we-webkit-box-shadow: 4px 4px 12px 0px rgba(135, 142, 148, 0.2);
-  -moz-box-shadow: 4px 4px 12px 0px rgba(135, 142, 148, 0.2);
-  box-shadow: 4px 4px 12px 0px rgba(135, 142, 148, 0.2);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(135, 142, 148, 0.2);
+  box-shadow: 4px 4px 12px 0 rgba(135, 142, 148, 0.2);
   position: sticky;
   top: 0;
   .header {
@@ -36,9 +36,11 @@
       }
 
       input {
+        font-weight: 500;
         outline: none;
         width: 170px;
         height: 43px;
+        font-size: 16px;
         border-radius: 10px;
         border: 2px solid #d0bde8;
         padding: 0 40px;
