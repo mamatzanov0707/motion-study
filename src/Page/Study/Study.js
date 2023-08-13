@@ -36,6 +36,12 @@ const Study = () => {
                     </div>
                 </div>
             </div>
+import Flag from '../../components/Flag';
+
+const Study = () => {
+    return (
+        <div>
+            <Flag/>
         </div>
     );
 };
