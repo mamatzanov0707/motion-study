@@ -13,6 +13,9 @@
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
+      a{
+        color: #000;
+      }
       &__one {
         width: 235px;
         height: 270px;
@@ -47,11 +50,11 @@
         background: #fdfdfd;
         text-align: center;
         font-size: 17px;
-
         option {
           border: none;
           outline: none;
           padding: 20px 300px;
+         
         }
       }
       &__options{

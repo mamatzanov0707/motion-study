@@ -13,6 +13,7 @@ import cyprus from "../../img/cyprus.png";
 import China from "../../img/china.png";
 import latvia from "../../img/latvia.png";
 import { Link } from "react-router-dom";
+import Country from "../../Page/Country";
 
 const Flag = () => {
   return (
@@ -48,7 +49,7 @@ const Flag = () => {
             </div>
           </div>
           <div className="flag--block">
-           <Link> 
+           <Link to={"/country"}> 
            <div className="flag--block__one">
               <img src={amertica} alt="img" />
               <h2>America</h2>
