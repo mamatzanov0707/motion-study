@@ -1,9 +1,10 @@
 import React from 'react';
+import Flag from '../../components/Flag';
 
 const Study = () => {
     return (
         <div>
-            Study
+            <Flag/>
         </div>
     );
 };
