@@ -17,7 +17,7 @@ const AboutUs = () => {
                        <div className='about--imgEs__car--tool'>
                            <span>About Us</span>
                            <h2>Best Education <br/>
-                               Platform</h2>
+                               Platfoorm</h2>
                            <h4>Apparently we had reached a great height in <br/>
                                the atmosphere, for the sky was a dead black.</h4>
                            <p>By the same illusion which lifts the horizon of the sea to <br/>
