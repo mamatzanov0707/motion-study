@@ -17,6 +17,10 @@
         color: #000;
       }
       &__one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 235px;
         height: 270px;
         border-radius: 14px;
@@ -25,7 +29,6 @@
           0px rgba(0, 0, 0, 0.1);
         text-align: center;
         margin-top: 100px;
-        padding-top: 25px;
         h2 {
           color: var(#212121);
           font-family: Montserrat, sans-serif;
