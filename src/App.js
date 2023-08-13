@@ -6,6 +6,7 @@ import AboutUs from "./Page/AboutUs/AboutUs";
 import Study from "./Page/Study/Study";
 import Contact from "./Page/Contact/Contact";
 import FlagCard from "./components/Flag/FlagCard";
+import Country from './Page/Country';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path={'/studyAbroad'} element={ <Study/> }/>
         <Route path={'/contacts'} element={ <Contact/> }/>
         <Route path={'/flag'} element={ <FlagCard/> }/>
+        <Route path={'/country'} element={ <Country/> }/>
       </Routes>
     </div>
   );
