@@ -55,6 +55,7 @@
             padding: 20px 0;
           }
           button{
+            cursor: pointer;
             color: #FDFDFD;
             text-align: center;
             font-family: Montserrat,sans-serif;
@@ -62,14 +63,12 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            display: flex;
             width: 209px;
             padding: 18px 72px 20px 72px;
-            justify-content: center;
-            align-items: center;
             border-radius: 80px;
             background: #109FEF;
             margin-top: 60px;
+            border: none;
           }
         }
       }
