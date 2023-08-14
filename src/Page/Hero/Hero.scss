@@ -1,0 +1,184 @@
+#hero {
+    padding: 100px 0;
+    position: relative;
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .hero--block {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        width: 780px;
+        height: 104px;
+        border-radius: 80px;
+        background: #fff;
+        box-shadow: 2px 6px 5px 1px rgba(178, 178, 178, 0.25),
+          -2px 2px 9px 1px rgba(83, 83, 83, 0.25);
+        bottom: 80px;
+        .hero--block__input {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          span {
+            color: #212121;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          input {
+            outline: none;
+          }
+        }
+        button {
+          border-radius: 80px;
+          background: #109fef;
+          padding: 15px 70px;
+          color: #fff;
+          position: relative;
+          display: inline-block;
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+          
+          &:focus:after {
+            opacity: 1;
+          }
+          &:hover:after {
+            opacity: 1;
+          }
+        }
+      }
+      .hero--title {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 40px;
+        margin-top: 55px;
+        h4 {
+          color: rgba(86, 9, 187, 0.8);
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: lowercase;
+        }
+  
+        h1 {
+          color: #000;
+          font-size: 60px;
+          font-style: normal;
+          font-family: Montserrat, sans-serif;
+          font-weight: 550;
+          line-height: normal;
+          letter-spacing: 2.56px;
+          text-transform: capitalize;
+          width: 491px;
+        }
+        p {
+          color: #606060;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 133.336%; /* 24px */
+          letter-spacing: 0.72px;
+          width: 393px;
+        }
+      }
+      .hero--image {
+        .one {
+          position: absolute;
+          top: 50px;
+          left: 20px;
+          animation: floatingAnimation 3.5s ease-in-out infinite;
+          @keyframes floatingAnimation {
+            0%,
+            100% {
+              transform: translateY(0); /* Исходное положение */
+            }
+            50% {
+              transform: translateY(-35px); /* Верхняя позиция */
+            }
+          }
+        }
+        .two {
+            position: absolute;
+            bottom: -10px;
+            left: -20px;
+            animation: floatingAnimation 6s ease-in-out infinite;
+            @keyframes floatingAnimation {
+              0%,
+              100% {
+                transform: translateY(0); /* Исходное положение */
+              }
+              50% {
+                transform: translateY(1px); /* Верхняя позиция */
+              }
+            }
+          }
+          .three {
+            position: absolute;
+            top: 0;
+            right: -20px;
+            animation: floatingAnimation 6s ease-in-out infinite;
+            @keyframes floatingAnimation {
+              0%,
+              100% {
+                transform: translateY(0); /* Исходное положение */
+              }
+              50% {
+                transform: translateY(1px); /* Верхняя позиция */
+              }
+            }
+          }
+          .four {
+            position: absolute;
+            bottom: 50px;
+            right: 20px;
+            animation: floatingAnimation 3.5s ease-in-out infinite;
+            @keyframes floatingAnimation {
+              0%,
+              100% {
+                transform: translateY(0); /* Исходное положение */
+              }
+              50% {
+                transform: translateY(-35px); /* Верхняя позиция */
+              }
+            }
+          }
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          width: 600px;
+          height: 600px;
+          border-radius: 18.75px;
+          background: linear-gradient(
+            134deg,
+            #ff474780,
+            #ffffff66,
+            #ffffff1a,
+            #5609bb4d
+          );
+        }
+      }
+    }
+      
