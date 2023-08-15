@@ -8,6 +8,7 @@ import Contact from "./Page/Contact/Contact";
 import FlagCard from "./components/Flag/FlagCard";
 import Country from './Page/Country'
 import Footer from "./components/Footer/footer";
+import Submit from "./components/submit/submit";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path={'/flag'} element={ <FlagCard/> }/>
         <Route path={'/country'} element={ <Country/> }/>
       </Routes>
+        <Submit/>
         <Footer/>
     </div>
   );
