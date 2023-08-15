@@ -14,6 +14,33 @@ const Country = () => {
     <section id="country">
       <div className="container">
 
+      <div className="select">
+            <select>
+              <option value="#">Higher Education</option>
+              <option value="#">Secondary Education</option>
+              <option value="#">Higher Education</option>
+              <option value="#">language courses for youth</option>
+              <option value="#">chilren's language comps</option>
+            </select>
+
+            <select name="" id="">
+              <option value="#">Specialization</option>
+              <option value="#">IT Technologies</option>
+              <option value="#">Bisiness</option>
+              <option value="#">Medicine</option>
+              <option value="#">International Relationships</option>
+              <option value="#">Tourism</option>
+            </select>
+            <div className="select--options">
+              <select name="" id="">
+                <option value="#">Сountries</option>
+                <option value="#">America</option>
+                <option value="#">Germany</option>
+                <option value="#">INDONESIA</option>
+                <option value="#">South Korea</option>
+              </select>
+            </div>
+          </div>
 
         <div className="country">
           <img src={onePhoto} alt="img" />
