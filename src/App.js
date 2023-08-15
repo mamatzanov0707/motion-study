@@ -11,6 +11,9 @@ import Other from './Page/Other';
 import Items from './Page/Items';
 import Artis from './Page/Artis';
 
+import Country from './Page/Country'
+import Footer from "./components/Footer/footer";
+import Submit from "./components/submit/submit";
 
 function App() {
   return (
@@ -28,6 +31,8 @@ function App() {
         <Route path={'/artis'} element={<Artis/>}/>
 
       </Routes>
+        <Submit/>
+        <Footer/>
     </div>
   );
 }

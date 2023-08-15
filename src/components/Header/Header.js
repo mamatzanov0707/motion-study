@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import './index.scss'
 import {BiSearch} from "react-icons/bi";
 
+
+
 const Header = () => {
     return (
         <div id="header">
