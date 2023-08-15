@@ -9,6 +9,7 @@ import "./Hero.scss";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import This from "../This/This";
 
 const Hero = () => {
   useEffect(() => {

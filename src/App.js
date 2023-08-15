@@ -1,7 +1,6 @@
 import './App.css';
 import Header from "./components/Header/Header";
 import {Route, Routes} from "react-router-dom";
-import Hero from "./Page/Hero/Hero";
 import AboutUs from "./Page/AboutUs/AboutUs";
 import Study from "./Page/Study/Study";
 import Contact from "./Page/Contact/Contact";
@@ -11,8 +10,8 @@ import Other from './Page/Other';
 import Items from './Page/Items';
 import Artis from './Page/Artis';
 
-import Country from './Page/Country'
 import Footer from "./components/Footer/footer";
+import HeroPage from "./components/HeroPage/HeroPage";
 import Submit from "./components/submit/submit";
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path={'/'} element={ <Hero/> }/>
+        <Route path={'/'} element={ <HeroPage/> }/>
         <Route path={'/aboutUs'} element={ <AboutUs/> }/>
         <Route path={'/studyAbroad'} element={ <Study/> }/>
         <Route path={'/contacts'} element={ <Contact/> }/>
