@@ -11,7 +11,7 @@ const AboutUs = () => {
                    <div className='about'>
                        <div className='about--imgEs'>
                            <div className='about--imgEs__car'>
-                               <img src={logo} alt=""/>
+                               <img src={logo}  alt=""/>
                            </div>
                        </div>
                        <div className='about--imgEs__car--tool'>
