@@ -8,8 +8,8 @@ import {BiLogoTelegram} from "react-icons/bi";
 const Submit = () => {
     return (
         <div id={"submit"}>
-            <div className="container">
-                <div className="submit flex justify-between">
+            <div className="container ">
+                <div className="submit flex justify-between mt-20 mb-40">
 
 
 
@@ -24,8 +24,8 @@ const Submit = () => {
 
                             </div>
                             <div className="flex flex-col justify-between h-[129px] mb-5">
-                            <input type="text" placeholder={"Group or Company"} className={"w-[100%] h-[22px] border-b-2 border-black "}/>
-                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black "}/>
+                            <input type="text" placeholder={"Group or Company"} className={"submit__card--one__input w-[100%] h-[22px] border-b-2 border-black submit__card--one__input "}/>
+                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black submit__card--one__input "}/>
                             </div>
                             <center><button type="button" className="text-white w-[165px] bg-blue-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-8 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                             </center>
