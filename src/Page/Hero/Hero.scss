@@ -156,10 +156,10 @@
             @keyframes floatingAnimation {
               0%,
               100% {
-                transform: translateY(0); /* Исходное положение */
+                transform: translateY(0);
               }
               50% {
-                transform: translateY(-35px); /* Верхняя позиция */
+                transform: translateY(-35px);
               }
             }
           }
@@ -178,6 +178,12 @@
             #ffffff1a,
             #5609bb4d
           );
+        }
+        .video--container{
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          
         }
       }
     }
