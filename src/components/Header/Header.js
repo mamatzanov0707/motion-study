@@ -29,14 +29,14 @@ const Header = () => {
                             <NavLink to="/studyAbroad">Study Abroad</NavLink>
                         </div>
                         <div className="header--nav__contact">
-                            <NavLink to="/contacts">Contacts</NavLink></div>
+                            <NavLink to="/">Contacts</NavLink></div>
                     </div>
 
 
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
-                            <input type="text" placeholder="Поиск..."/>
+                             <input type="text" placeho   lder="Поиск..."/>
                         </NavLink>
                     </div>
                     <div className="header--language">
