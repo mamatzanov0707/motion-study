@@ -2,6 +2,7 @@ import React from "react";
 import "../Flag/index.scss";
 import amertica from "../../img/america.png";
 import greatBritan from "../../img/griteBriten.png";
+import austria from "../../img/ausrtra.png";
 import germany from "../../img/germany.png";
 import holland from "../../img/holland.png";
 import ireland from "../../img/Ireland.png";
@@ -11,7 +12,8 @@ import canada from "../../img/canada.png";
 import cyprus from "../../img/cyprus.png";
 import China from "../../img/china.png";
 import latvia from "../../img/latvia.png";
-import {Link, NavLink} from "react-router-dom";
+import { Link } from "react-router-dom";
+import Country from "../../Page/Country";
 
 const Flag = () => {
   return (
@@ -46,14 +48,13 @@ const Flag = () => {
               </select>
             </div>
           </div>
-            <div className="flag--block">
+          <div className="flag--block">
+            <Link to={"/country"}>
               <div className="flag--block__one">
-              <NavLink to={"/country"}>
-                  <img src={amertica} alt="img" />
+                <img src={amertica} alt="img" />
                 <h2>America</h2>
-              </NavLink>
               </div>
-
+            </Link>
 
               <div className="flag--block__one">
                 <img src={greatBritan} alt="img" />
@@ -70,46 +71,41 @@ const Flag = () => {
                 <h2>Holland</h2>
               </div>
 
-              <div className="flag--block__one">
-                <NavLink to={"/country"}>
-
-                <img src={ireland} alt="img" />
-                <h2>Ireland</h2>
-                </NavLink>
-
-              </div>
-
-              <div className="flag--block__one">
-                <img src={spain} alt="img" />
-                <h2>Spain</h2>
-              </div>
-
-              <div className="flag--block__one">
-                <img src={italy} alt="img" />
-                <h2>Italy</h2>
-              </div>
-
-              <div className="flag--block__one">
-                <img src={canada} alt="img" />
-                <h2>Canada</h2>
-              </div>
-
-              <div className="flag--block__one">
-                <img src={cyprus} alt="img" />
-                <h2>Cyprus</h2>
-              </div>
-
-              <div className="flag--block__one">
-                <img src={China} alt="img" />
-                <h2>China</h2>
-              </div>
-
-              <div className="flag--block__one">
-                <img src={latvia} alt="img" />
-                <h2>Latvia</h2>
-              </div>
-
+            <div className="flag--block__one">
+              <img src={ireland} alt="img" />
+              <h2>Ireland</h2>
             </div>
+
+            <div className="flag--block__one">
+              <img src={spain} alt="img" />
+              <h2>Spain</h2>
+            </div>
+
+            <div className="flag--block__one">
+              <img src={italy} alt="img" />
+              <h2>Italy</h2>
+            </div>
+
+            <div className="flag--block__one">
+              <img src={canada} alt="img" />
+              <h2>Canada</h2>
+            </div>
+
+            <div className="flag--block__one">
+              <img src={cyprus} alt="img" />
+              <h2>Cyprus</h2>
+            </div>
+
+            <div className="flag--block__one">
+              <img src={China} alt="img" />
+              <h2>China</h2>
+            </div>
+
+            <div className="flag--block__one">
+              <img src={latvia} alt="img" />
+              <h2>Latvia</h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
