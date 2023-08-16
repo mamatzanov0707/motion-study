@@ -35,7 +35,9 @@ const Header = () => {
 
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
-                        <input type="text" placeholder="Поиск..."/>
+                        <NavLink to={"/country"}>
+                            <input type="text" placeholder="Поиск..."/>
+                        </NavLink>
                     </div>
                     <div className="header--language">
                         <select>
