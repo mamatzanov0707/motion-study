@@ -56,26 +56,20 @@ const Flag = () => {
               </div>
             </Link>
 
-            <Link to={"/other"}>
               <div className="flag--block__one">
                 <img src={greatBritan} alt="img" />
                 <h2>Great Britain</h2>
               </div>
-            </Link>
 
-            <Link to={"/itams"}>
               <div className="flag--block__one">
                 <img src={germany} alt="img" />
                 <h2>Germany</h2>
               </div>
-            </Link>
 
-            <Link to={'/artis'}>
               <div className="flag--block__one">
                 <img src={holland} alt="img" />
                 <h2>Holland</h2>
               </div>
-            </Link>
 
             <div className="flag--block__one">
               <img src={ireland} alt="img" />

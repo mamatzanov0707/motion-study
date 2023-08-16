@@ -1,19 +1,18 @@
 #footer {
+  margin-top: 90px;
   background: black;
-  height: 216px;
+  //height: 216px;
 .container {
-  display: flex;
-  align-items: center;
-  height: 240px;
+  //display: flex;
+  //align-items: center;
+  //height: 240px;
   margin-top:8px ;
   .footer {
     display: flex;
     justify-content: space-between;
-    width: 1140px;
+    //width: 1140px;
     height: 93px;
     align-items: center;
-
-
     &__text{
       h3{
         font-size:14px;

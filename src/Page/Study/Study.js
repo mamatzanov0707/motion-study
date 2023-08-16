@@ -42,7 +42,6 @@ const Study = () => {
                    </div>
                </div>
            </div>
-           <English/>
        </>
     )
 }

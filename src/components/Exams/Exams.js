@@ -5,7 +5,7 @@ import Frame1 from "../../img/img5.svg";
 import Frame2 from "../../img/img6.svg";
 import "./index.scss";
 
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Exams() {
     return (
@@ -20,7 +20,7 @@ function Exams() {
                     </p>
                     <div className="exams--big">
                         <div className="exams--big__one">
-                            <img src={Rectangle} alt="img" />
+                            <img src={Rectangle} alt="img"/>
                             <div className="exams--big__one--text">
                                 <h2>cambrige English exams</h2>
                                 <h3>Your path to learning English, step by step.</h3>
@@ -30,53 +30,60 @@ function Exams() {
                                     qualifications are based on research into effective teaching
                                     and learning.
                                 </h5>
-                                <NavLink to="cambridge">
+                                <NavLink to="/cambridge">
                                     <h4>Discover more</h4>
                                 </NavLink>
                             </div>
                         </div>
                         <div className="exams--big__two">
                             <div className="exams--big__two--block">
-                                <img src={Frame} alt="img" />
+                                <NavLink to={"/artis"}>
+                                    <img src={Frame} alt="img"/>
+                                </NavLink>
                                 <div className="exams--big__two--block__text">
                                     <div className="exams--big__two--block__text--mini">
                                         <h5>Aptis</h5>
                                     </div>
                                     <h3>
-                                        Choose Aptis for your  assessment needs
+                                        Choose Aptis for your assessment needs
                                     </h3>
                                     <h2>
-                                        Aptis is a computer basedtest which provides fast <br />{" "}
+                                        Aptis is a computer basedtest which provides fast <br/>{" "}
                                         results reliably marked by our exsaminest.
                                     </h2>
                                 </div>
                             </div>
                             <div className="exams--big__two--block">
-                                <img src={Frame} alt="img" />
+                                <NavLink to={"/items"}>
+                                    <img src={Frame} alt="img"/>
+
+                                </NavLink>
                                 <div className="exams--big__two--block__text">
                                     <div className="exams--big__two--block__text--mini">
                                         <h5>Aptis</h5>
                                     </div>
                                     <h3>
-                                        Choose Aptis for your  assessment needs
+                                        Choose Aptis for your assessment needs
                                     </h3>
                                     <h2>
-                                        Aptis is a computer basedtest which provides fast <br />{" "}
+                                        Aptis is a computer basedtest which provides fast <br/>{" "}
                                         results reliably marked by our exsaminest.
                                     </h2>
                                 </div>
                             </div>
                             <div className="exams--big__two--block">
-                                <img src={Frame} alt="img" />
+                                <NavLink to={"/other"}>
+                                    <img src={Frame} alt="img"/>
+                                </NavLink>
                                 <div className="exams--big__two--block__text">
                                     <div className="exams--big__two--block__text--mini">
                                         <h5>Aptis</h5>
                                     </div>
                                     <h3>
-                                        Choose Aptis for your  assessment needs
+                                        Choose Aptis for your assessment needs
                                     </h3>
                                     <h2>
-                                        Aptis is a computer basedtest which provides fast <br />{" "}
+                                        Aptis is a computer basedtest which provides fast <br/>{" "}
                                         results reliably marked by our exsaminest.
                                     </h2>
                                 </div>

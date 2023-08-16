@@ -32,6 +32,7 @@ const Header = () => {
                             <NavLink to="/contacts">Contacts</NavLink></div>
                     </div>
 
+
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <input type="text" placeholder="Поиск..."/>
