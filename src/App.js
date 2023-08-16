@@ -13,27 +13,46 @@ import Artis from './Page/Artis';
 import Footer from "./components/Footer/footer";
 import HeroPage from "./components/HeroPage/HeroPage";
 import Submit from "./components/submit/submit";
+import {useEffect, useState} from "react";
+import Loading from "./components/Loading/Loading";
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Routes>
-        <Route path={'/'} element={ <HeroPage/> }/>
-        <Route path={'/aboutUs'} element={ <AboutUs/> }/>
-        <Route path={'/studyAbroad'} element={ <Study/> }/>
-        <Route path={'/contacts'} element={ <Contact/> }/>
-        <Route path={'/flag'} element={ <FlagCard/> }/>
-        <Route path={'/country'} element={ <Country/> }/>
-        <Route path={'/other'} element={ <Other/>}/>
-        <Route path={'/itams'} element={<Items/>}/>
-        <Route path={'/artis'} element={<Artis/>}/>
+    const [load, setLoad] = useState(true)
 
-      </Routes>
-        <Submit/>
-        <Footer/>
-    </div>
-  );
+    useEffect(() => {
+        setLoad(true)
+        setTimeout(() => {
+            setLoad(false)
+        }, 5000)
+    }, [])
+    return (
+        <>
+            <Loading load={load}/>
+
+
+            <div style={{
+                display: load ? 'none' : 'block'
+            }}>
+                <div className="App">
+                    <Header/>
+                    <Routes>
+                        <Route path={'/'} element={<HeroPage/>}/>
+                        <Route path={'/aboutUs'} element={<AboutUs/>}/>
+                        <Route path={'/studyAbroad'} element={<Study/>}/>
+                        <Route path={'/contacts'} element={<Contact/>}/>
+                        <Route path={'/flag'} element={<FlagCard/>}/>
+                        <Route path={'/country'} element={<Country/>}/>
+                        <Route path={'/other'} element={<Other/>}/>
+                        <Route path={'/itams'} element={<Items/>}/>
+                        <Route path={'/artis'} element={<Artis/>}/>
+
+                    </Routes>
+                    <Submit/>
+                    <Footer/>
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default App;
