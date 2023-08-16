@@ -43,7 +43,6 @@ const Team = () => {
                             <h3>Mr.Aryan Singh  </h3>
                             <span>Head of Marketing</span>
                         </div>
-
                     </div>
                 </div>
             </div>

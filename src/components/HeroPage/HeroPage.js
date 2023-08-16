@@ -3,6 +3,7 @@ import Hero from "../../Page/Hero/Hero";
 import This from "../../Page/This/This";
 import Exams from "../Exams/Exams";
 import Slider from "../Slider/Slider";
+import Submit from "../submit/submit";
 
 const HeroPage = () => {
     return (
@@ -11,6 +12,7 @@ const HeroPage = () => {
             <This/>
             <Exams/>
             <Slider/>
+            <Submit/>
         </div>
     );
 };
