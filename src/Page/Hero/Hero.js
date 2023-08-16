@@ -9,7 +9,8 @@ import "./Hero.scss";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import This from "../This/This";
+import myVideo from "../../img/video.webm"; 
+
 
 const Hero = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Hero = () => {
       once: true,
     });
   }, []);
+  
 
   return (
     <div id="hero">
@@ -36,6 +38,11 @@ const Hero = () => {
               Study at the world's top universities and expand your horizons.
               Get the highest quality education and achieve success abroad.
             </p>
+           <video autoPlay loop muted src={myVideo} style={{
+            width:'130px',
+            marginLeft:"350px",
+            marginTop:'-50px'
+           }} type="video"></video>
           </div>
           <div className="hero--image">
             <div>
@@ -60,6 +67,8 @@ const Hero = () => {
             </div>
             <button>Contact</button>
           </div>
+
+          
         </div>
       </div>
     </div>
