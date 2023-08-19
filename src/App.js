@@ -47,9 +47,8 @@ function App() {
                         <Route path={'/other'} element={<Other/>}/>
                         <Route path={'/itams'} element={<Items/>}/>
                         <Route path={'/artis'} element={<Artis/>}/>
-
+                         <Route path={'/cambridge'} element={<English/>}/>
                     </Routes>
-                    <Submit/>
                     <Footer/>
                 </div>
             </div>

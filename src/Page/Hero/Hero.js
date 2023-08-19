@@ -10,6 +10,9 @@ import {useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import myVideo from "../../img/video.webm"; 
+import {NavLink} from "react-router-dom";
+import {BiSearch} from "react-icons/bi";
+
 
 
 const Hero = () => {
@@ -23,27 +26,35 @@ const Hero = () => {
   }, []);
   
 
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    }, []);
+    //     AOS.init({
+    //         duration: 1000,
+    //         once: true,
+    //     });
+    // }, []);
 
 return (
     <div id="hero">
         <div className="container">
+        <div className="input">
+                        <BiSearch className="input--icon"/>
+                        <NavLink to={"/country"}>
+                            <input type="text" placeholder="Поиск..."/>
+                        </NavLink>
+                    </div>
             <div className="hero">
+            
                 <div
                     data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine"
                     className="hero--title">
-                    <h4>eXPLORE tHE wORLD</h4>
+                    <h4>EXPLORE THE WORLD</h4>
                     <h1>Study abroad with our help</h1>
                     <p>
                         Study at the world's top universities and expand your horizons.
                         Get the highest quality education and achieve success abroad.
                     </p>
+                    <video autoPlay loop muted src={myVideo}></video>
                 </div>
                 <div className="hero--image">
                     <div>
@@ -69,7 +80,7 @@ return (
                     <button>Contact</button>
                 </div>
             </div>
-      <div className="container">
+      {/* <div className="container">
         <div className="hero">
           <div
             data-aos="fade-right"
@@ -111,12 +122,12 @@ return (
             </div>
             <button>Contact</button>
           </div>
-
+</div>
+</div> */}
           
         </div>
     </div>
 );
-}
-;
+};
 
 export default Hero;
