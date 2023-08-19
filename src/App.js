@@ -11,11 +11,9 @@ import Artis from './Page/Artis';
 import Country from './Page/Country'
 import Footer from "./components/Footer/footer";
 import HeroPage from "./components/HeroPage/HeroPage";
-import Submit from "./components/submit/submit";
 import English from "./Page/Hero/English/English"
 import {useEffect, useState} from "react";
 import Loading from "./components/Loading/Loading";
-import Flag from "./components/Flag";
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -52,6 +50,6 @@ function App() {
             </div>
         </>
     );
-};
+}
 
 export default App;
