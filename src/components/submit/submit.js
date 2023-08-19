@@ -1,27 +1,12 @@
-import React from 'react';
+import React, { useState} from "react";
 import './index_sub.scss'
-import {BsFillTelephoneInboundFill} from "react-icons/bs";
-import {HiOutlineMail} from "react-icons/hi";
-import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
-import {BiLogoTelegram} from "react-icons/bi";
-
-const Submit = () => {
-    return (
-        <div id={"submit"}>
-
-            <div className="container ">
-                <div className="submit flex justify-between mt-20 mb-40">
-
-            <div className="container">
-                <div className="submit flex justify-between">
-import React, {useEffect, useState} from "react";
-import './index_sub.scss';
 import {BsInstagram, BsTelephoneInbound, BsWhatsapp} from "react-icons/bs";
 import {AiOutlineMail} from "react-icons/ai";
 import {PiTelegramLogoDuotone} from "react-icons/pi";
 import {CopyToClipboard} from "react-copy-to-clipboard";
 import {IoCopyOutline} from "react-icons/io5";
 import emailjs from "@emailjs/browser";
+
 
 const Message = () => {
     const [send, setSend] = useState(false)
@@ -79,27 +64,32 @@ const Message = () => {
                             </div>
                             <div className="flex flex-col justify-between h-[129px] mb-5">
 
-                            <input type="text" placeholder={"Group or Company"} className={"submit__card--one__input w-[100%] h-[22px] border-b-2 border-black submit__card--one__input "}/>
-                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black submit__card--one__input "}/>
+                                <input type="text" placeholder={"Group or Company"}
+                                       className={"submit__card--one__input w-[100%] h-[22px] border-b-2 border-black submit__card--one__input "}/>
+                                <input type="text" placeholder={"how can we help?"}
+                                       className={"w-[100%] h-[50px] border-b-2 border-black submit__card--one__input "}/>
 
-                            <input type="text" placeholder={"Group or Company"} className={"w-[100%] h-[22px] border-b-2 border-black "}/>
-                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black "}/>
-                            <div className='message--block__car'>
-                                <div className='message--block__car--input'>
-                                    <input type="number" placeholder='phone'/>
-                                </div>
-                                <div className='message--block__car--input'>
-                                    <input type="email" placeholder='email'/>
-                                </div>
+                                <input type="text" placeholder={"Group or Company"}
+                                       className={"w-[100%] h-[22px] border-b-2 border-black "}/>
+                                <input type="text" placeholder={"how can we help?"}
+                                       className={"w-[100%] h-[50px] border-b-2 border-black "}/>
+                                <div className='message--block__car'>
+                                    <div className='message--block__car--input'>
+                                        <input type="number" placeholder='phone'/>
+                                    </div>
+                                    <div className='message--block__car--input'>
+                                        <input type="email" placeholder='email'/>
+                                    </div>
 
+                                </div>
+                                <div className='message--block__tools'>
+                                    <input type="text" placeholder='Group or Company'/>
+                                </div>
+                                <div className='message--block__tools'>
+                                    <input type="text" placeholder='how can we help?'/>
+                                </div>
+                                <button>Submit</button>
                             </div>
-                            <div className='message--block__tools'>
-                                <input type="text" placeholder='Group or Company'/>
-                            </div>
-                            <div className='message--block__tools'>
-                                <input type="text" placeholder='how can we help?'/>
-                            </div>
-                            <button>Submit</button>
                         </form>
                     </div>
                     <div className='message--help'>
@@ -208,7 +198,6 @@ const Message = () => {
                 </div>
             </div>
         </div>
-    );
-};
-
-export default Message;
+                );
+                };
+ export default Message;
