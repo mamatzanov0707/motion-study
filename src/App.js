@@ -19,8 +19,6 @@ import Holland from "./components/Holland/Holland";
 import Ireland from "./components/Ireland/Ireland";
 import English from "./Page/Hero/English/English";
 
-
-
 function App() {
     const [load, setLoad] = useState(true)
 
@@ -33,7 +31,6 @@ function App() {
     return (
         <>
             <Loading load={load}/>
-
 
             <div style={{
                 display: load ? 'none' : 'block'

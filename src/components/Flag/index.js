@@ -45,7 +45,6 @@ const Flag = () => {
                             </select>
                         </div>
                     </div>
-
                     <div className="flag--block">
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
@@ -65,57 +64,48 @@ const Flag = () => {
                                 <h2>Germany</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/holland"}>
                             <div className="flag--block__one">
                                 <img src={holland} alt="img"/>
                                 <h2>Holland</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/ireland"}>
                             <div className="flag--block__one">
                                 <img src={ireland} alt="img"/>
                                 <h2>Ireland</h2>
-
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={spain} alt="img"/>
                                 <h2>Spain</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={italy} alt="img"/>
                                 <h2>Italy</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={canada} alt="img"/>
                                 <h2>Canada</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={cyprus} alt="img"/>
                                 <h2>Cyprus</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={China} alt="img"/>
                                 <h2>China</h2>
                             </div>
                         </NavLink>
-
                         <NavLink to={"/country"}>
                             <div className="flag--block__one">
                                 <img src={latvia} alt="img"/>

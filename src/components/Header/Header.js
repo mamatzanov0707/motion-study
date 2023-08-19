@@ -29,8 +29,6 @@ const Header = () => {
                             <a href="" onClick={() => window.scroll(0, 3300)}>Contacts</a>
                         </div>
                     </div>
-
-
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
