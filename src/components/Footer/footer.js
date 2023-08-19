@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Footer/in_dex.scss'
+import './index.scss'
 import img from './img/Vector.svg'
 import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
 import {BiLogoTelegram} from "react-icons/bi";

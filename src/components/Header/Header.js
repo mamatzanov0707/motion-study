@@ -5,10 +5,8 @@ import './index.scss'
 import {BiSearch} from "react-icons/bi";
 
 
-
 const Header = () => {
     const [dashed1, setDashed1] = useState(0)
-
     return (
         <div id="header">
             <div className="container">
@@ -29,14 +27,15 @@ const Header = () => {
                             <NavLink to="/studyAbroad">Study Abroad</NavLink>
                         </div>
                         <div className="header--nav__contact">
-                            <NavLink to="/">Contacts</NavLink></div>
+                            <a href="" onClick={() => window.scroll(0, 3300)}>Contacts</a>
+                        </div>
                     </div>
 
 
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
-                             <input type="text" placeho   lder="Поиск..."/>
+                            <input type="text" placeholder="Поиск..."/>
                         </NavLink>
                     </div>
                     <div className="header--language">

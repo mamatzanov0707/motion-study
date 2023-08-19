@@ -129,8 +129,136 @@
 }
 
 
-@media (max-width:1200px) {
-  
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  #other .other--one h3 {
+    width: 982px;
+  }
+}
+@media (max-width: 1024px) {
+  #other .other--one h3 {
+    width: 982px;
+  }
+}
+@media (max-width: 992px) {
+  #other .other--one h3 {
+    width: 719px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  #other .other--one h3 {
+    width: 485px;
+  }
+  #other .other--block h1 {
+    font-size: 39px;
+  }
+  #other .other--one h2 {
+    font-size: 30px;
+
+  }
+    #other .other--one h3 {
+      width: 432px;
+      font-size: 17px;
+      padding: 20px 0;
+    }
+  #other .other--one__blue h4 {
+    font-size: 16px;
+  }
+  #other .other--two h3 {
+    padding: 45px 0 0 0;
+    font-size: 30px;
+  }
+  #other .other--two__id h4 {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+  #other .other--three h3 {
+    font-size: 30px;
+  }
+  #other .other--three__questions h4 {
+    font-size: 18px;
+  }
+  #other .other--three h3 {
+    font-size: 30px;
+    padding: 50px 0;
+  }
+}
+@media (max-width: 450px) {
+}
+@media (max-width: 400px) {
+  #other .other--three h3 {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+
+}
+@media (max-width: 376px) {
+  #other .other--one h3 {
+    width: 339px;
+    font-size: 17px;
+    padding: 20px 0;
+  }
+  #other .other--one h3 {
+    width: 279px;
+    font-size: 15px;
+  }
+  #other .other--one h2 {
+    font-size: 20px;
+  }
+  #other .other--block h1 {
+    font-size: 35px;
+  }
+  #other .other--one__blue h4 {
+    font-size: 15px;
+  }
+  #other .other--two h3 {
+    padding: 45px 0 0 0;
+    font-size: 20px;
+  }
+  #other .other--three h3 {
+    font-size: 20px;
+    padding-top: 145px;
+  }
+  #other .other--three__questions h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  #other .other--one h3 {
+    width: 339px;
+    font-size: 17px;
+    padding: 20px 0;
+  }
+  #other .other--one h3 {
+    width: 279px;
+    font-size: 15px;
+  }
+  #other .other--one h2 {
+    font-size: 20px;
+  }
+  #other .other--block h1 {
+    font-size: 35px;
+  }
+  #other .other--one__blue h4 {
+    font-size: 15px;
+  }
+  #other .other--two h3 {
+    padding: 45px 0 0 0;
+    font-size: 20px;
+  }
+  #other .other--three h3 {
+    font-size: 20px;
+    padding-top: 145px;
+  }
+  #other .other--three__questions h4 {
+    font-size: 15px;
+  }
 }
 
 

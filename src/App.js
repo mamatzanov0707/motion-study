@@ -9,13 +9,17 @@ import Other from './Page/Other';
 import Items from './Page/Items';
 import Artis from './Page/Artis';
 import Country from './Page/Country'
-import Footer from "./components/Footer/footer";
-import HeroPage from "./components/HeroPage/HeroPage";
-import Submit from "./components/submit/submit";
-import English from "./Page/Hero/English/English"
 import {useEffect, useState} from "react";
 import Loading from "./components/Loading/Loading";
-import Flag from "./components/Flag";
+import Footer from "./components/Footer/footer";
+import HeroPage from "./components/HeroPage/HeroPage";
+import Britain from "./components/GreatBreatain/britain";
+import German from "./components/Germany/german";
+import Holland from "./components/Holland/Holland";
+import Ireland from "./components/Ireland/Ireland";
+import English from "./Page/Hero/English/English";
+
+
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -30,10 +34,12 @@ function App() {
         <>
             <Loading load={load}/>
 
+
             <div style={{
                 display: load ? 'none' : 'block'
             }}>
                 <div className="App">
+
                     <Header/>
                     <Routes>
                         <Route path={'/'} element={<HeroPage/>}/>
@@ -45,6 +51,10 @@ function App() {
                         <Route path={'/other'} element={<Other/>}/>
                         <Route path={'/ielts'} element={<Items/>}/>
                         <Route path={'/artis'} element={<Artis/>}/>
+                        <Route path={'/britain'} element={<Britain/>}/>
+                        <Route path={'/germany'} element={<German/>}/>
+                        <Route path={'/holland'} element={<Holland/>}/>
+                        <Route path={'/ireland'} element={<Ireland/>}/>
                         <Route path={'/english'} element={<English/>}/>
                     </Routes>
                     <Footer/>
@@ -52,6 +62,6 @@ function App() {
             </div>
         </>
     );
-};
+}
 
 export default App;
