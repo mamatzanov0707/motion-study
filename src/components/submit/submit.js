@@ -1,3 +1,19 @@
+import React from 'react';
+import './index_sub.scss'
+import {BsFillTelephoneInboundFill} from "react-icons/bs";
+import {HiOutlineMail} from "react-icons/hi";
+import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
+import {BiLogoTelegram} from "react-icons/bi";
+
+const Submit = () => {
+    return (
+        <div id={"submit"}>
+
+            <div className="container ">
+                <div className="submit flex justify-between mt-20 mb-40">
+
+            <div className="container">
+                <div className="submit flex justify-between">
 import React, {useEffect, useState} from "react";
 import './index_sub.scss';
 import {BsInstagram, BsTelephoneInbound, BsWhatsapp} from "react-icons/bs";
@@ -12,7 +28,6 @@ const Message = () => {
     const [iconsValue, setIconsValue] = useState(false)
     const [inputValue, setInputValue] = useState('');
     const [isError, setIsError] = useState(false);
-
     const triggerEmail = async (data) => {
         await emailjs.send("service_eent9gh", 'template_67ii9if', data, '1xmzYNkvqvEhVAtWC').then((success) => {
             alert('Email Sent Successfully');
@@ -62,6 +77,13 @@ const Message = () => {
                                     <input type="text" placeholder='Last Name'/>
                                 </div>
                             </div>
+                            <div className="flex flex-col justify-between h-[129px] mb-5">
+
+                            <input type="text" placeholder={"Group or Company"} className={"submit__card--one__input w-[100%] h-[22px] border-b-2 border-black submit__card--one__input "}/>
+                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black submit__card--one__input "}/>
+
+                            <input type="text" placeholder={"Group or Company"} className={"w-[100%] h-[22px] border-b-2 border-black "}/>
+                            <input type="text" placeholder={"how can we help?"} className={"w-[100%] h-[50px] border-b-2 border-black "}/>
                             <div className='message--block__car'>
                                 <div className='message--block__car--input'>
                                     <input type="number" placeholder='phone'/>
