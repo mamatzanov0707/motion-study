@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #FFFFFF;
+  background: #ffffff;
   .header {
     display: flex;
     align-items: center;
@@ -13,7 +13,6 @@
     padding: 20px 0;
 
     &--title {
-
     }
 
     &--nav {
@@ -76,6 +75,28 @@
         font-weight: 400;
         &.active {
           position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: red;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 2s;
+          }
+        }
+      }
+      h2 {
+        position: relative;
+        margin: 0 20px;
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        &.active {
+          position: relative;
           &::before{
             content: '';
             position: absolute;
@@ -91,9 +112,9 @@
         }
       }
 
-      :hover{
-        ::before{
-          content: '';
+      :hover {
+        ::before {
+          content: "";
           position: absolute;
           width: 10px;
           height: 10px;
@@ -105,9 +126,9 @@
           transition: 2s;
         }
       }
-      :focus{
-        ::before{
-          content: '';
+      :focus {
+        ::before {
+          content: "";
           position: absolute;
           width: 10px;
           height: 10px;
@@ -144,15 +165,28 @@
       }
     }
 
-    &--language{
-      select{
+    &--language {
+      select {
         border: none;
         font-size: 14px;
       }
     }
   }
+
+  .burger-menu {
+    display: none;
+  }
+  .burger-item {
+    width: 30px;
+    height: 3px;
+    background: #d0bde8;
+    margin: 7px 0;
+    margin-left: 90%;
+    z-index: 100;
+    top: 20px;
+  }
 }
-.red{
+.red {
   left: 362px;
   top: 58px;
   position: absolute;
@@ -161,8 +195,8 @@
   height: 10px;
   background: red;
 }
-.red1{
-   left: 463px;
+.red1 {
+  left: 463px;
   top: 58px;
   position: absolute;
   border-radius: 50%;
@@ -170,7 +204,7 @@
   height: 10px;
   background: red;
 }
-.red2{
+.red2 {
   left: 581px;
   top: 58px;
   position: absolute;
@@ -179,7 +213,7 @@
   height: 10px;
   background: red;
 }
-.red3{
+.red3 {
   left: 700px;
   top: 58px;
   position: absolute;
@@ -189,8 +223,342 @@
   background: red;
 }
 
+@media (max-width: 1024px) {
+  #header {
+    .container {
+      .header {
+        justify-content: space-evenly;
+        &--input {
+          &__icon {
+            top: 12px;
+          }
+        }
+        &--nav {
+        }
+      }
+    }
+  }
+  // #load{
+  //   top: 125%;
 
+  // }
+}
 
+@media (max-width: 992px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          img {
+            margin-left: -90%;
+          }
+        }
+        &--nav {
+          margin-left: 151px;
+          a {
+            font-size: 14px;
+            margin: 0 15px;
+          }
+        }
+        &--input {
+          font-size: 15px;
+          input {
+            width: 159px;
+            height: 40px;
+            margin-left: 28%;
+          }
+          &__icon {
+            font-size: 18px;
+            top: 12px;
+            left: 58px;
+          }
+        }
+        &--language {
+          select {
+            margin-left: 144%;
+          }
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 768px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          margin-right: 600px;
+          img {
+            margin-left: -11%;
+          }
+        }
+        &--blur {
+          width: 100%;
+          height: 1515%;
+          position: absolute;
+          background: #1818189d;
+          z-index: 1;
+          backdrop-filter: 2;
+          margin-left: -20px;
+        }
+        &--burger {
+          font-size: 35px;
+          position: absolute;
+          top: 0;
+          left: 92%;
+          top: 27%;
+          z-index: 99;
+        }
+        &--nav1 {
+          position: absolute;
+          top: 0;
+          left: 40%;
+          backdrop-filter: blur(5px);
+          width: 30%;
+          height: 500px;
+          background: #e9f3ff;
+          margin-left: 30%;
+          transition: 0.5s;
+          z-index: 20;
 
+          &__navs1 {
+            font-size: 20px;
+            margin: 50px 0 25px 35px;
 
+          }
+          &__about {
+            font-size: 20px;
+            margin: 10px 0 25px 35px;
+          }
+          &__study {
+            font-size: 20px;
+            margin: 10px 0 25px 35px;
+          }
+          &__contact {
+            font-size: 20px;
+            margin: 10px 0 25px 35px;
+          }
+          &__language1 {
+            margin: 10px 35px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h3 {
+              font-size: 20px;
+              margin: 0 10px 0 10px;
+              display: flex;
+            }
+          }
+          &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            h3 {
+              margin: 0 10px;
+              font-size: 25px;
+            }
+          }
+        }
+        &--input {
+          display: none;
+        }
+        &--language {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          margin-right: 978px;
+        }
+        &--blur {
+          margin-left: -582px;
+        }
+        &--nav1 {
+          left: 30%;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          img {
+            width: 85%;
+          }
+        }
+        &--burger {
+          left: 89%;
+        }
+        &--blur {
+          margin-left: -655px;
+          height: 1633%;
+        }
+        &--nav1 {
+          left: 2%;
+          width: 68%;
+          &__language1 {
+            margin: 10px 145px 0 0;
+          }
+          &__icon {
+            margin-right: 95px;
+            h3 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #header {
+    .container {
+      .header {
+        &--blur {
+          margin-left: -710px;
+        }
+        &--nav1 {
+          left: 19%;
+          width: 51%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          margin-right: 1024px;
+        }
+        &--blur {
+          margin-left: -738px;
+        }
+        &--nav1 {
+          left: -8%;
+          width: 77%;
+          &__language1 {
+            margin: 10px 126px 0 0;
+          }
+          &__icon {
+            margin-right: 10px;
+            h3 {
+              font-size: 40px;
+              margin: 0 15px;
+            }
+          }
+        }
+        &--burger {
+          left: 87%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          margin-right: 1024px;
+        }
+        &--blur {
+          margin-left: -758px;
+        }
+        &--nav1 {
+          left: -12%;
+          width: 82%;
+        }
+        &--burger {
+          left: 87%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          margin-right: 1024px;
+        }
+        &--blur {
+          margin-left: -784px;
+        }
+        &--nav1 {
+          left: -30%;
+          width: 100%;
+          height: 604px;
+          &__language1 {
+            margin: 8px 176px 0 0;
+          }
+          &__icon {
+            margin-right: 78px;
+            h3 {
+              margin: 0 15px;
+              font-size: 35px;
+            }
+          }
+        }
+        &--burger {
+          left: 87%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #header {
+    .container {
+      .header {
+        &--title {
+          img {
+            width: 45px;
+          }
+          margin-right: 1055px;
+        }
+        &--blur {
+          margin-left: -835px;
+        }
+        &--nav1 {
+          left: -30%;
+          width: 100%;
+          height: 604px;
+          &__language1 {
+            margin: 8px 113px 0 0;
+          }
+          &__icon {
+            margin-right: 14px;
+            h3 {
+              margin: 0 15px;
+              font-size: 35px;
+            }
+          }
+        }
+        &--burger {
+          font-size: 31px;
+        }
+      }
+    }
+  }
+}

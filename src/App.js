@@ -32,11 +32,11 @@ function App() {
         <>
             <Loading load={load}/>
 
+
             <div style={{
                 display: load ? 'none' : 'block'
             }}>
                 <div className="App">
-
                     <Header/>
                     <Routes>
                         <Route path={'/'} element={<HeroPage/>}/>
@@ -46,13 +46,14 @@ function App() {
                         <Route path={'/flag'} element={<FlagCard/>}/>
                         <Route path={'/country'} element={<Country/>}/>
                         <Route path={'/other'} element={<Other/>}/>
-                        <Route path={'/ielts'} element={<Items/>}/>
+                        <Route path={'/itams'} element={<Items/>}/>
                         <Route path={'/artis'} element={<Artis/>}/>
                         <Route path={'/britain'} element={<Britain/>}/>
                         <Route path={'/germany'} element={<German/>}/>
                         <Route path={'/holland'} element={<Holland/>}/>
                         <Route path={'/ireland'} element={<Ireland/>}/>
                         <Route path={'/english'} element={<English/>}/>
+                         <Route path={'/cambridge'} element={<English/>}/>
                     </Routes>
                     <Footer/>
                 </div>

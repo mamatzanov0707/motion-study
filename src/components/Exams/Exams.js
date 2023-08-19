@@ -28,7 +28,7 @@ function Exams() {
                                     qualifications are based on research into effective teaching
                                     and learning.
                                 </h5>
-                                <NavLink to="/english">
+                                <NavLink to="/cambridge">
                                     <h4>Discover more</h4>
                                 </NavLink>
                             </div>
@@ -52,7 +52,7 @@ function Exams() {
                                 </div>
                             </div>
                             <div className="exams--big__two--block">
-                                <NavLink to={"/ielts"}>
+                                <NavLink to={"/items"}>
                                     <img src={Frame} alt="img"/>
 
                                 </NavLink>

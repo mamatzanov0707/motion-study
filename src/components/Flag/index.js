@@ -2,6 +2,7 @@ import React from "react";
 import "../Flag/index.scss";
 import amertica from "../../img/america.png";
 import greatBritan from "../../img/griteBriten.png";
+import austria from "../../img/ausrtra.png";
 import germany from "../../img/germany.png";
 import holland from "../../img/holland.png";
 import ireland from "../../img/Ireland.png";
