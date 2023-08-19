@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import logo1 from '../../img/motionLogo.svg'
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import './index.scss'
 import {BiSearch} from "react-icons/bi";
 import {RiMenu3Fill} from "react-icons/ri";
@@ -86,6 +86,7 @@ const Header = () => {
                             <NavLink to="/studyAbroad">Study Abroad</NavLink>
                         </div>
                         <div className="header--nav1__contact"  onClick={()=> setIsBurgerOpen(false)}>
+                            <a  onClick={() => window.scroll(0 , 3100)} >Contacts</a></div>
                             <NavLink to="/contacts">Contacts</NavLink></div>
                             <div className="header--nav1__language1">
                                 <h3>EN</h3>
@@ -102,7 +103,6 @@ const Header = () => {
                     )
                    }
 
-
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
@@ -116,11 +116,6 @@ const Header = () => {
                         </select>
                     </div>
                 </div>
-
-
-    
-               
-            
             </div>
         </div>
     );
