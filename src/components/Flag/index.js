@@ -122,7 +122,6 @@ const Flag = () => {
                                 <h2>Latvia</h2>
                             </div>
                         </NavLink>
-
                     </div>
                 </div>
             </div>

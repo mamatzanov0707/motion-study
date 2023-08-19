@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 import './index.scss'
 import {BiSearch} from "react-icons/bi";
 
-
 const Header = () => {
     const [dashed1, setDashed1] = useState(0)
     return (

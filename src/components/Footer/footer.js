@@ -4,6 +4,7 @@ import img from './img/Vector.svg'
 import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
 import {BiLogoTelegram} from "react-icons/bi";
 
+
 const Footer = () => {
     return (
         <div id={"footer"}>
