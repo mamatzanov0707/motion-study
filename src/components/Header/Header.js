@@ -30,13 +30,14 @@ const Header = () => {
                         </div>
                         <div className="header--nav__contact">
                             <a  onClick={() => window.scroll(0 , 3100)} >Contacts</a></div>
+                            <NavLink to="/contacts">Contacts</NavLink></div>
                     </div>
 
 
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
-                             <input type="text" placeho   lder="Поиск..."/>
+                            <input type="text" placeholder="Поиск..."/>
                         </NavLink>
                     </div>
                     <div className="header--language">
