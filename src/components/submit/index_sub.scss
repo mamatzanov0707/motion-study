@@ -1,43 +1,4 @@
-#massage {
-  .container{
-    .massage {
-      &__card {
-
-        &--one {
-          border-radius: 4px;
-          box-shadow: 4px 6px 18px 0 rgba(60, 60, 40, 60);
-
-          &__input {
-
-            border-color: #474646;
-
-            border-color: #606060;
-
-            outline: none;
-          }
-        }
-
-        &--two {
-          background: rgba(86, 9, 187, 0.70);
-          padding-top: 12px;
-
-          h3 {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: normal;
-          }
-
-          &__icon {
-            font-size: 26px;
-          }
-
-          .footer__icon {
-            font-size: 26px;
-            width: 39px;
-          }
-        }
-
-        #message {
+ #message {
           .message {
             display: flex;
             align-items: start;
@@ -259,8 +220,7 @@
             }
           }
         }
-      }
-    }}}
+
 
 @media (max-width: 1400px) {
   .container{
