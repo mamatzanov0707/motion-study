@@ -9,11 +9,13 @@ const AboutUs = () => {
            <div id='about'>
                <div className="container">
                    <div className='about'>
-                       <div className='about--imgEs'>
-                           <div className='about--imgEs__car'>
-                               <img src={logo} alt=""/>
-                           </div>
-                       </div>
+                      <div className='about__top'>
+                          <div className='about--imgEs'>
+                              <div className='about--imgEs__car'>
+                                  <img src={logo}  alt=""/>
+                              </div>
+                          </div>
+                      </div>
                        <div className='about--imgEs__car--tool'>
                            <span>About Us</span>
                            <h2>Best Education <br/>

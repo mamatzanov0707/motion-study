@@ -16,106 +16,105 @@ import { Link } from "react-router-dom";
 import Country from "../../Page/Country";
 
 const Flag = () => {
-  return (
-    <section id="flag">
-      <div className="container">
-        <h1>Choose the country</h1>
-        <div className="flag">
-          <div className="flag--select">
-            <select>
-              <option value="#">Higher Education</option>
-              <option value="#">Secondary Education</option>
-              <option value="#">Higher Education</option>
-              <option value="#">language courses for youth</option>
-              <option value="#">chilren's language comps</option>
-            </select>
+    return (
+        <section id="flag">
+            <div className="container">
+                <h1>Choose the country</h1>
+                <div className="flag">
+                    <div className="flag--select">
+                        <select>
+                            <option value="#">Higher Education</option>
+                            <option value="#">Secondary Education</option>
+                            <option value="#">Higher Education</option>
+                            <option value="#">language courses for youth</option>
+                            <option value="#">chilren's language comps</option>
+                        </select>
 
-            <select name="" id="">
-              <option value="#">Specialization</option>
-              <option value="#">IT Technologies</option>
-              <option value="#">Bisiness</option>
-              <option value="#">Medicine</option>
-              <option value="#">International Relationships</option>
-              <option value="#">Tourism</option>
-            </select>
-            <div className="flag--select__options">
-              <select name="" id="">
-                <option value="#">Сountries</option>
-                <option value="#">America</option>
-                <option value="#">Germany</option>
-                <option value="#">INDONESIA</option>
-                <option value="#">South Korea</option>
-              </select>
+                        <select name="" id="">
+                            <option value="#">Specialization</option>
+                            <option value="#">IT Technologies</option>
+                            <option value="#">Bisiness</option>
+                            <option value="#">Medicine</option>
+                            <option value="#">International Relationships</option>
+                            <option value="#">Tourism</option>
+                        </select>
+                        <div className="flag--select__options">
+                            <select name="" id="">
+                                <option value="#">Сountries</option>
+                                <option value="#">America</option>
+                                <option value="#">Germany</option>
+                                <option value="#">INDONESIA</option>
+                                <option value="#">South Korea</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="flag--block">
+                        <div className="flag--block__one">
+                            <NavLink to={"/country"}>
+                                <img src={amertica} alt="img"/>
+                                <h2>America</h2>
+                            </NavLink>
+                        </div>
+
+
+                        <div className="flag--block__one">
+                            <img src={greatBritan} alt="img"/>
+                            <h2>Great Britain</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={germany} alt="img"/>
+                            <h2>Germany</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={holland} alt="img"/>
+                            <h2>Holland</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <NavLink to={"/country"}>
+
+                                <img src={ireland} alt="img"/>
+                                <h2>Ireland</h2>
+                            </NavLink>
+
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={spain} alt="img"/>
+                            <h2>Spain</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={italy} alt="img"/>
+                            <h2>Italy</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={canada} alt="img"/>
+                            <h2>Canada</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={cyprus} alt="img"/>
+                            <h2>Cyprus</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={China} alt="img"/>
+                            <h2>China</h2>
+                        </div>
+
+                        <div className="flag--block__one">
+                            <img src={latvia} alt="img"/>
+                            <h2>Latvia</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="flag--block">
-            <Link to={"/country"}>
-              <div className="flag--block__one">
-                <img src={amertica} alt="img" />
-                <h2>America</h2>
-              </div>
-            </Link>
-
-            <Link to={"/other"}>
-              <div className="flag--block__one">
-                <img src={greatBritan} alt="img" />
-                <h2>Great Britain</h2>
-              </div>
-            </Link>
-
-            <Link to={"/itams"}>
-              <div className="flag--block__one">
-                <img src={germany} alt="img" />
-                <h2>Germany</h2>
-              </div>
-            </Link>
-
-            <Link to={'/artis'}>
-              <div className="flag--block__one">
-                <img src={holland} alt="img" />
-                <h2>Holland</h2>
-              </div>
-            </Link>
-
-            <div className="flag--block__one">
-              <img src={ireland} alt="img" />
-              <h2>Ireland</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={spain} alt="img" />
-              <h2>Spain</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={italy} alt="img" />
-              <h2>Italy</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={canada} alt="img" />
-              <h2>Canada</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={cyprus} alt="img" />
-              <h2>Cyprus</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={China} alt="img" />
-              <h2>China</h2>
-            </div>
-
-            <div className="flag--block__one">
-              <img src={latvia} alt="img" />
-              <h2>Latvia</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Flag;
