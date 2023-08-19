@@ -8,15 +8,16 @@ import FlagCard from "./components/Flag/FlagCard";
 import Other from './Page/Other';
 import Items from './Page/Items';
 import Artis from './Page/Artis';
-
 import Country from './Page/Country'
-import Footer from "./components/Footer/footer";
-import HeroPage from "./components/HeroPage/HeroPage";
-import English from "./Page/Hero/English/English"
-import Submit from "./components/submit/submit";
-import English from "./Page/Hero/English/English";
 import {useEffect, useState} from "react";
 import Loading from "./components/Loading/Loading";
+import Footer from "./components/Footer/footer";
+import HeroPage from "./components/HeroPage/HeroPage";
+import Britain from "./components/GreatBreatain/britain";
+import German from "./components/Germany/german";
+import Holland from "./components/Holland/Holland";
+import Ireland from "./components/Ireland/Ireland";
+import English from "./Page/Hero/English/English";
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -47,6 +48,11 @@ function App() {
                         <Route path={'/other'} element={<Other/>}/>
                         <Route path={'/itams'} element={<Items/>}/>
                         <Route path={'/artis'} element={<Artis/>}/>
+                        <Route path={'/britain'} element={<Britain/>}/>
+                        <Route path={'/germany'} element={<German/>}/>
+                        <Route path={'/holland'} element={<Holland/>}/>
+                        <Route path={'/ireland'} element={<Ireland/>}/>
+                        <Route path={'/english'} element={<English/>}/>
                          <Route path={'/cambridge'} element={<English/>}/>
                     </Routes>
                     <Footer/>
