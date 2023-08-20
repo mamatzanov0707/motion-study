@@ -92,26 +92,107 @@
   .container{
     width: 1140px;
   }
+  //#about{
+  //  .about{
+  //
+  //    flex-wrap: wrap-reverse;
+  //  }
+  //}
+}
+@media (max-width:576px) {
   #about{
     .about{
-      flex-direction: column;
-      flex-wrap: wrap-reverse;
+      &--imgEs{
+        width: 420px;
+        height: 480px;
+        &__car{
+          img{
+            width: 495px;
+            height: 630px;
+          }
+        }
+      }
     }
   }
 }
-@media (max-width:576px) {
-  
-}
 
 @media (max-width:451px) {
-  
+  #about{
+    .about{
+      &--imgEs{
+        width: 340px;
+        height: 395px;
+        &__car{
+          img{
+            width: 350px;
+            height: 630px;
+            margin-top: -40px;
+          }
+          &--tool{
+            h2{
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 @media (max-width: 400px) {
   
 }
 @media (max-width: 376px) {
-  
+  #about{
+    .about{
+      &__top{
+        margin-top: 40px;
+      }
+      &--imgEs{
+        width: 320px;
+        height: 355px;
+        &__car{
+          img{
+            width: 340px;
+            height: 630px;
+            margin-top: -60px;
+            margin-left: -20px;
+          }
+          &--tool{
+            h2{
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 @media (max-width:320px) {
-  
+  #about{
+    .about{
+      &__top{
+        margin-top: 40px;
+      }
+      &--imgEs{
+        width: 250px;
+        height: 295px;
+        &__car{
+          img{
+            width: 370px;
+            height: 630px;
+            margin-top: -90px;
+            margin-left: -20px;
+          }
+          &--tool{
+            h2{
+              font-size: 37px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

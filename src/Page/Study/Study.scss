@@ -1,6 +1,5 @@
 #study {
-  padding: 6% 0;
-
+  margin-top: 40px;
   .study {
     h2 {
       color: var(--text-212121, #212121);
@@ -30,6 +29,11 @@
         border: 3px solid var(--text-212121, #212121);
         margin-left: 45px;
         margin-top: -10%;
+        &__code{
+          img{
+            display: none;
+          }
+        }
         img {
           margin-left: -43px;
           margin-top: 40px;
@@ -75,3 +79,167 @@
     }
   }
 }
+
+  @media (max-width: 1400px) {
+    .container{
+      width: 90% !important;
+    }
+  }
+  @media (max-width: 1200px) {
+    #study{
+      .study{
+      h2{
+
+      }
+
+        &--block{
+          margin-top: 50px;
+          justify-content: center;
+          align-items: center;
+         flex-wrap: wrap;
+          &--motion{
+            &__about{
+              margin-top: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width:1024px) {
+
+  }
+  @media (max-width:992px) {
+    #study{
+      .study{
+
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    #study{
+      .study{
+
+      }
+    }
+
+  }
+  @media (max-width: 567px) {
+
+
+  }
+  @media (max-width: 451px) {
+    #study{
+      .study{
+        &--block{
+          //margin-top: 120px;
+          &--motion{
+            //width: 270px;
+            //height: 280px;
+            img{
+              display: none;
+            }
+            &__code{
+              //margin-top: 20px;
+              img{
+                margin-top: 20px;
+                //width: 120%;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (max-width: 400px) {
+    #study{
+      .study{
+        h2{
+          font-size: 33px;
+        }
+        &--line{
+          width: 80px;
+        }
+        &--block{
+          //margin-top: 120px;
+          &--motion{
+            //width: 270px;
+            height: 330px;
+            img{
+              display: none;
+            }
+            &__code{
+              //margin-top: 20px;
+              img{
+                margin-top: 20px;
+                //width: 120%;
+                display: block;
+              }
+            }
+            &__about{
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (max-width: 376px) {
+    #study{
+      .study{
+        &--block{
+          //margin-top: 120px;
+          &--motion{
+            //width: 270px;
+            height: 310px;
+            img{
+              display: none;
+            }
+            &__code{
+              //margin-top: 20px;
+              img{
+                margin-top: 20px;
+                //width: 120%;
+                display: block;
+              }
+            }
+            &__about{
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (max-width: 320px) {
+    #study{
+      .study{
+        &--block{
+          //margin-top: 120px;
+          &--motion{
+            //width: 270px;
+            height: 260px;
+            img{
+              display: none;
+            }
+            &__code{
+              //margin-top: 20px;
+              img{
+                margin-top: 20px;
+                //width: 120%;
+                display: block;
+              }
+            }
+            &__about{
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+  }

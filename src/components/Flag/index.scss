@@ -5,7 +5,7 @@
     font-family: Gilroy, sans-serif;
     font-size: 48px;
     font-weight: 500;
-    margin: 0px 0 44px 15px;
+    margin: 0 0 44px 15px;
   }
   .flag {
     &--block {
@@ -13,6 +13,7 @@
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
+      gap: 20px;
       a{
         color: #000;
       }
@@ -26,7 +27,7 @@
         border-radius: 14px;
         background: #fdfdfd;
         box-shadow: 4.82119607925415px 7.713913440704346px 24.10597801208496px
-          0px rgba(0, 0, 0, 0.1);
+          0 rgba(0, 0, 0, 0.1);
         text-align: center;
         margin-top: 100px;
         h2 {

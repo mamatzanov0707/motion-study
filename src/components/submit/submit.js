@@ -62,17 +62,7 @@ const Message = () => {
                                     <input type="text" placeholder='Last Name'/>
                                 </div>
                             </div>
-                            <div className="flex flex-col justify-between h-[129px] mb-5">
 
-                                <input type="text" placeholder={"Group or Company"}
-                                       className={"submit__card--one__input w-[100%] h-[22px] border-b-2 border-black submit__card--one__input "}/>
-                                <input type="text" placeholder={"how can we help?"}
-                                       className={"w-[100%] h-[50px] border-b-2 border-black submit__card--one__input "}/>
-
-                                <input type="text" placeholder={"Group or Company"}
-                                       className={"w-[100%] h-[22px] border-b-2 border-black "}/>
-                                <input type="text" placeholder={"how can we help?"}
-                                       className={"w-[100%] h-[50px] border-b-2 border-black "}/>
                                 <div className='message--block__car'>
                                     <div className='message--block__car--input'>
                                         <input type="number" placeholder='phone'/>
@@ -89,7 +79,6 @@ const Message = () => {
                                     <input type="text" placeholder='how can we help?'/>
                                 </div>
                                 <button>Submit</button>
-                            </div>
                         </form>
                     </div>
                     <div className='message--help'>
