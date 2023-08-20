@@ -2,7 +2,6 @@ import React from "react";
 import "../Flag/index.scss";
 import amertica from "../../img/america.png";
 import greatBritan from "../../img/griteBriten.png";
-import austria from "../../img/ausrtra.png";
 import germany from "../../img/germany.png";
 import holland from "../../img/holland.png";
 import ireland from "../../img/Ireland.png";
@@ -13,8 +12,6 @@ import cyprus from "../../img/cyprus.png";
 import China from "../../img/china.png";
 import latvia from "../../img/latvia.png";
 import { NavLink } from "react-router-dom";
-import Country from "../../Page/Country";
-import {NavLink} from "react-router-dom";
 
 const Flag = () => {
     return (

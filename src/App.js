@@ -9,11 +9,8 @@ import Other from './Page/Other';
 import Items from './Page/Items';
 import Artis from './Page/Artis';
 import Country from './Page/Country'
-import {useEffect, useState} from "react";
-import Loading from "./components/Loading/Loading";
 import Footer from "./components/Footer/footer";
 import HeroPage from "./components/HeroPage/HeroPage";
-import English from "./Page/Hero/English/English"
 import {useEffect, useState} from "react";
 import Loading from "./components/Loading/Loading";
 import Britain from "./components/GreatBreatain/britain";
