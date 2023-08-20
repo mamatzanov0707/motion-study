@@ -3,6 +3,7 @@ import './Study.scss'
 import map from '../../img/map.svg'
 import {Link, NavLink} from "react-router-dom";
 import English from "../Hero/English/English";
+import logo from './../../img/map-12.svg'
 
 const Study = () => {
     return (
@@ -14,6 +15,9 @@ const Study = () => {
                        <div className='study--line'></div>
                        <div className='study--block'>
                            <div className='study--block--motion'>
+                              <div className='study--block--motion__code'>
+                                  <img src={logo} alt=""/>
+                              </div>
                                <img src={map} alt=""/>
                            </div>
                            <div className='study--block--motion__about'>

@@ -115,6 +115,12 @@ const Flag = () => {
                                 <h2>Latvia</h2>
                             </div>
                         </NavLink>
+                        <NavLink to={"/country"}>
+                            <div className="flag--block__one">
+                                <img src={latvia} alt="img"/>
+                                <h2>Latvia</h2>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
             </div>

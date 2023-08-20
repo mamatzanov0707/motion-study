@@ -52,7 +52,7 @@ function Exams() {
                                 </div>
                             </div>
                             <div className="exams--big__two--block">
-                                <NavLink to={"/items"}>
+                                <NavLink to={"/ielts"}>
                                     <img src={Frame} alt="img"/>
 
                                 </NavLink>

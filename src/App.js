@@ -49,7 +49,7 @@ function App() {
                         <Route path={'/flag'} element={<FlagCard/>}/>
                         <Route path={'/country'} element={<Country/>}/>
                         <Route path={'/other'} element={<Other/>}/>
-                        <Route path={'/itams'} element={<Items/>}/>
+                        <Route path={'/ielts'} element={<Items/>}/>
                         <Route path={'/artis'} element={<Artis/>}/>
                         <Route path={'/britain'} element={<Britain/>}/>
                         <Route path={'/germany'} element={<German/>}/>
