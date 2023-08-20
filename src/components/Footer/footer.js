@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Footer/in_dex.scss'
+import './index.scss'
 import img from './img/Vector.svg'
 import {AiFillInstagram, AiFillYoutube} from "react-icons/ai";
 import {BiLogoTelegram} from "react-icons/bi";
@@ -25,7 +25,6 @@ const Footer = () => {
                     <AiFillInstagram className={"footer__icon"}/>
                 </div>
             </div>
-
                 <hr className={"footer__hr text-white"}/>
                 <center>
                     <h4 className={"text-white "}>c 2023 Motion Study LLC</h4>

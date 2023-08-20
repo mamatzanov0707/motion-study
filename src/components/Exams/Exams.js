@@ -1,8 +1,6 @@
 import React from "react";
 import Rectangle from "../../img/girle.png";
 import Frame from "../../img/boy.svg";
-import Frame1 from "../../img/img5.svg";
-import Frame2 from "../../img/img6.svg";
 import "./index.scss";
 
 import {NavLink} from "react-router-dom";

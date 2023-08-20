@@ -1,12 +1,12 @@
 import React from "react";
-import {americadata} from "../../components/FaceBack/america";
 import './index.scss'
 import {CiLocationOn} from "react-icons/ci";
+import germany from "../FaceBack/germany";
 
 
-const Country = () => {
+const German = () => {
     return (
-        <section id="country">
+        <section id="germany">
             <div className="container">
                 <h1>United Stated</h1>
 
@@ -40,30 +40,25 @@ const Country = () => {
                 <br/>
 
                 {
-                    americadata.map((el) => (
+                    germany.map((el) => (
                         <div className="country">
                             <div className="country__cards">
-
                                 <div className="country__cards--card">
                                     <img src={el.img} alt=""/>
-                                </div>
-
-                                <div className="country__cards--ones">
-                                    <div className="country__cards--ones__one1">
+                                    <div className="country__cards--card__one1">
                                         <h4>Name:</h4>
                                         <h3>{el.name}</h3>
                                     </div>
-                                    <div className="country__cards--ones__one2">
+                                    <div className="country__cards--card__one2">
                                         <div className="country__cards--card__one2--icon">
-                                            <h4>Location <CiLocationOn className="icon"/></h4>
+                                            <h4>Location</h4><CiLocationOn/>
                                         </div>
                                         <h3>{el.location}</h3>
                                     </div>
-                                    <div className="country__cards--ones__one3">
+                                    <div className="country__cards--card__one3">
                                         <h4>Age:</h4>
                                         <h3>{el.Age}</h3>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -74,4 +69,4 @@ const Country = () => {
     );
 };
 
-export default Country;
+export default German;

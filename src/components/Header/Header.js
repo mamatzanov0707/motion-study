@@ -16,7 +16,7 @@ import {MdEmail} from "react-icons/md"
 const Header = () => {
     const [dashed1, setDashed1] = useState(0)
     const [isBurgerOpen, setIsBurgerOpen] = useState(false); // Состояние для бургер-меню
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth); 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [activeBurgerMenuItem, setActiveBurgerMenuItem] = useState(null);
 
     // Обработчик изменения размера окна
@@ -34,9 +34,9 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-   
-    
-    
+
+
+
     return (
         <div id="header">
             <div className="container">
@@ -48,7 +48,7 @@ const Header = () => {
                     <div style={{display: dashed1 === 2 ? 'block' : 'none'}} className="red1"></div>
                     <div style={{display: dashed1 === 3 ? 'block' : 'none'}} className="red2"></div>
                     <div style={{display: dashed1 === 4 ? 'block' : 'none'}} className="red3"></div>
-                    
+
                     {windowWidth <= 768 ? ( // Если ширина окна <= 768, показываем бургер-меню
                     <div className="header--burger" onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
                         {isBurgerOpen ? <GrFormClose style={{zIndex:"100"}}/> : <RiMenu3Fill style={{zIndex:"100"}}/>}
@@ -72,14 +72,15 @@ const Header = () => {
                 }} className="header--blur"></div>
                    {
                     isBurgerOpen &&(
-                        
+
                         <div className="header--nav1" style={{ display: isBurgerOpen ? 'block' : 'none' }}>
                         <div className={`header--nav1__navs1 ${activeBurgerMenuItem === "Home"? "active" : ""}`}
                         onClick={()=>{
                             setIsBurgerOpen(false)
                             setActiveBurgerMenuItem("Home")
                         }}>
-                            <NavLink to="/">Home</NavLink></div>
+                            <NavLink to="/">Home</NavLink>
+                        </div>
                         <div className="header--nav1__about " onClick={()=> setIsBurgerOpen(false)}>
                             <NavLink to="/aboutUs">AboutUs</NavLink>
                             </div>
@@ -92,6 +93,9 @@ const Header = () => {
                             <NavLink to="/contacts">Contacts</NavLink>
                             </div>
                             <div className="header--nav1__language1">
+                            <NavLink to="/contacts">Contacts</NavLink>
+                        </div>
+                       <div className="header--nav1__language1">
                                 <h3>EN</h3>
                                 <h3>RU</h3>
                                 <h3>KG</h3>
@@ -110,7 +114,7 @@ const Header = () => {
                     <div className="header--input">
                         <BiSearch className="header--input__icon"/>
                         <NavLink to={"/country"}>
-                            <input type="text" placeholder="Поиск..."/>
+                             <input type="text" placeholder="Поиск..."/>
                         </NavLink>
                     </div>
                     <div className="header--language">
