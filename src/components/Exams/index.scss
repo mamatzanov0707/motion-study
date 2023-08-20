@@ -111,6 +111,157 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  #exams{
+    .container{
+      width: 90%;
+      .exams{
+        h1{
+          font-size: 45px;
+        }
+        p{
+          font-size: 18px;
+          width: 542px;
+          margin: 30px 0 60px 22%;
+        }
+        &--big{
+          &__one{
+            height: 546px;
+            margin-top: -18px;
+          }
+          &__two{
+            &--block{
+              width: 532px;
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #exams .container .exams--big__one {
+    margin-left: -56px;
+}
+#exams .container .exams h1 {
+ 
+  margin-left: -108px;
+}
+#exams .container .exams p {
+  margin: 30px 0 60px 12%;
+}
+}
+@media (max-width: 768px) {
+  #exams .exams--big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#exams .container .exams h1 {
+  margin-left: 30px;
+}
+#exams .container .exams p {
+  font-size: 18px;
+  width: 446px;
+  margin: 24px 0 60px 18%
+}
+#exams .container .exams--big__two--block {
+  margin-top: 27px;
+}
+#exams .container .exams--big__one {
+  margin-left: 33px;
+}
+#exams .container .exams--big__one {
+    height: 590px;
+}
+}
+@media (max-width: 576px) {
+  #exams .container .exams h1 {
+    font-size: 40px;
+}
+#exams .container .exams h1 {
+  margin-left: -1px;
+}
+#exams .container .exams p {
+  font-size: 16px;
+  width: 395px;
+  margin: 25px 0 60px 11%;
+}
+#exams .container .exams--big__two--block {
+  width: 455px;
+  height: 203px;
+  margin-left: 24px;
+}
+#exams .exams--big__two--block__text h2 {
+  font-size: 14px;
+  width: 84%;
+  height: 204px;
+}
+#exams .exams--big__two--block__text{
+  margin-top: 125px;
+}
+}
+@media (max-width: 400px) {
+  #exams .container .exams h1 {
+    font-size: 35px;
+}
+#exams .container .exams p {
+  font-size: 15px;
+  width: 286px;
+  margin: 25px 0 60px 11%;
+  text-align: inherit;
+}
+#exams .container .exams--big__one {
+  width: 300px;
+  height: 520px;
+  margin-left: -2px;
+}
+
+#exams .exams--big__one--text h5 {
+  font-size: 12px;
+  width: 243px;
+}
+#exams .exams--big__one--text h3 {
+  font-size: 16px;
+}
+#exams .container .exams--big__two--block {
+  width: 298px;
+  height: 363px;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#exams .exams--big__two--block__text {
+  margin-top: -2px;
+  margin-left: 19px;
+}
+}
+@media (max-width: 320px) {
+  #exams .container .exams p {
+    font-size: 14px;
+    width: 270px;
+    margin: 25px 0 60px 1%;
+    text-align: inherit;
+  }
+  #exams .container .exams h1 {
+    font-size: 33px;
+}
+
+#exams .exams--big__one--text {
+  margin-left: 16px;
+}
+#exams .exams--big__one--text h4 {
+  margin-top: 10px;
+  margin-left: -51px;
+}
+#exams .container .exams--big__one {
+  height: 495px;
+}
+=======
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {

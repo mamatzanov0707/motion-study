@@ -13,6 +13,9 @@ import {useEffect, useState} from "react";
 import Loading from "./components/Loading/Loading";
 import Footer from "./components/Footer/footer";
 import HeroPage from "./components/HeroPage/HeroPage";
+import English from "./Page/Hero/English/English"
+import {useEffect, useState} from "react";
+import Loading from "./components/Loading/Loading";
 import Britain from "./components/GreatBreatain/britain";
 import German from "./components/Germany/german";
 import Holland from "./components/Holland/Holland";

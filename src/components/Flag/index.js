@@ -12,6 +12,8 @@ import canada from "../../img/canada.png";
 import cyprus from "../../img/cyprus.png";
 import China from "../../img/china.png";
 import latvia from "../../img/latvia.png";
+import { NavLink } from "react-router-dom";
+import Country from "../../Page/Country";
 import {NavLink} from "react-router-dom";
 
 const Flag = () => {

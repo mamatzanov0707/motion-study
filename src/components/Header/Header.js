@@ -82,12 +82,17 @@ const Header = () => {
                             <NavLink to="/">Home</NavLink>
                         </div>
                         <div className="header--nav1__about " onClick={()=> setIsBurgerOpen(false)}>
-                            <NavLink to="/aboutUs">AboutUs</NavLink></div>
+                            <NavLink to="/aboutUs">AboutUs</NavLink>
+                            </div>
                         <div className="header--nav1__study"  onClick={()=> setIsBurgerOpen(false)}>
                             <NavLink to="/studyAbroad">Study Abroad</NavLink>
                         </div>
                         <div className="header--nav1__contact"  onClick={()=> setIsBurgerOpen(false)}>
                             <a  onClick={() => window.scroll(0 , 3100)} >Contacts</a>
+                            
+                            <NavLink to="/contacts">Contacts</NavLink>
+                            </div>
+                            <div className="header--nav1__language1">
                             <NavLink to="/contacts">Contacts</NavLink>
                         </div>
                        <div className="header--nav1__language1">
@@ -95,6 +100,7 @@ const Header = () => {
                                 <h3>RU</h3>
                                 <h3>KG</h3>
                             </div>
+                        
                        <div className="header--nav1__icon">
                         <h3><FaTelegramPlane/></h3>
                         <h3><AiFillInstagram/></h3>
