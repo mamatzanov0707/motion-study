@@ -18,6 +18,7 @@ const Header = () => {
     const [isBurgerOpen, setIsBurgerOpen] = useState(false); // Состояние для бургер-меню
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [activeBurgerMenuItem, setActiveBurgerMenuItem] = useState(null);
+    const [redDotPosition, setRedDotPosition] = useState(0);
 
     // Обработчик изменения размера окна
     const handleResize = () => {
@@ -54,6 +55,7 @@ const Header = () => {
                         {isBurgerOpen ? <GrFormClose style={{zIndex:"100"}}/> : <RiMenu3Fill style={{zIndex:"100"}}/>}
                     </div>
                 ) : (
+
                     <div className="header--nav" >
                         <div className="header--nav__navs">
                             <NavLink to="/">Home</NavLink></div>
@@ -74,27 +76,32 @@ const Header = () => {
                     isBurgerOpen &&(
 
                         <div className="header--nav1" style={{ display: isBurgerOpen ? 'block' : 'none' }}>
-                        <div className={`header--nav1__navs1 ${activeBurgerMenuItem === "Home"? "active" : ""}`}
-                        onClick={()=>{
-                            setIsBurgerOpen(false)
-                            setActiveBurgerMenuItem("Home")
-                        }}>
-                            <NavLink to="/">Home</NavLink>
-                        </div>
-                        <div className="header--nav1__about " onClick={()=> setIsBurgerOpen(false)}>
-                            <NavLink to="/aboutUs">AboutUs</NavLink>
-                            </div>
-                        <div className="header--nav1__study"  onClick={()=> setIsBurgerOpen(false)}>
-                            <NavLink to="/studyAbroad">Study Abroad</NavLink>
-                        </div>
-                        <div className="header--nav1__contact"  onClick={()=> setIsBurgerOpen(false)}>
-                            <a  onClick={() => window.scroll(0 , 3100)} >Contacts</a>
-                            
+                    <div className="header--nav1__navs1" onClick={()=> setIsBurgerOpen(false)}>
+    <NavLink to="/" onClick={() => setRedDotPosition(1)}>
+        Home {redDotPosition === 1 && <div className="red-dot"></div>}
+    </NavLink>
+</div>
+<div className="header--nav1__about" onClick={()=> setIsBurgerOpen(false)}>
+    <NavLink to="/aboutUs" onClick={() => setRedDotPosition(2)}>
+        AboutUs {redDotPosition === 2 && <div className="red-dot"></div>}
+    </NavLink>
+</div>
+<div className="header--nav1__study" onClick={()=> setIsBurgerOpen(false)}>
+    <NavLink to="/studyAbroad" onClick={() => setRedDotPosition(3)}>
+        Study Abroad {redDotPosition === 3 && <div className="red-dot"></div>}
+    </NavLink>
+</div>
+<div className="header--nav1__contact" onClick={()=> setIsBurgerOpen(false)}>
+    <a onClick={() => {
+        setRedDotPosition(4);
+        window.scroll(0, 3100);
+    }}>
+        Contacts {redDotPosition === 4 && <div className="red-dot"></div>}
+    </a>
+</div>
+                            {/* <div className="header--nav1__language1">
                             <NavLink to="/contacts">Contacts</NavLink>
-                            </div>
-                            <div className="header--nav1__language1">
-                            <NavLink to="/contacts">Contacts</NavLink>
-                        </div>
+                        </div> */}
                        <div className="header--nav1__language1">
                                 <h3>EN</h3>
                                 <h3>RU</h3>

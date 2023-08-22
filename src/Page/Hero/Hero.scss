@@ -287,22 +287,24 @@
             margin-left: 80%;
             margin-top: -69px;
           }
+          
           h4 {
-            margin-left: -51px;
+            font-size: 18px;
+            margin-left: -39px;
           }
           h1 {
             font-size: 43px;
             width: 363px;
-            margin-left: -53px;
+            margin-left: -38px;
           }
           p {
-            margin-left: -48px;
+            margin-left: -31px;
           }
         }
         &--image {
-          width: 488px;
+          width: 474px;
           height: 451px;
-          margin-right: -64px;
+          margin-right: -58px;
           .three {
             width: 42%;
             right: 9px;
@@ -319,7 +321,7 @@
           }
         }
         &--block {
-          left: 47px;
+          left: -21px;
           width: 562px;
           height: 73px;
           input {
@@ -348,33 +350,42 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        width: 718px;
+        flex-direction: column;
+        // width: 718px;
+        margin-left: 100px;
         &--image {
           margin-top: 51px;
+          margin-right: 147px;
         }
         &--title {
           h4 {
             font-size: 23px;
+            margin-left: -219px;
           }
           h1 {
             font-size: 45px;
             width: 369px;
+            margin-left: -226px;
           }
           p {
             font-size: 20px;
             width: 391px;
+            margin-left: -223px;
           }
           video {
-            width: 100px;
-            margin-left: 15%;
-            margin-top: -62px;
+            width: 134px;
+            margin-left: -80%;
+            margin-top: -59px;
           }
         }
         &--block {
-          left: 131px;
+          left: 13px;
           width: 517px;
           height: 73px;
           top: 96%;
+          button{
+            padding: 13px 53px;
+          }
           input {
             font-size: 56%;
           }
@@ -384,7 +395,7 @@
       .input {
         display: block;
         input {
-          margin: 37px 0 0px 135px;
+          margin: 37px 0 0px 40px
         }
         // &--icon {
         //   top: 10px;
@@ -400,33 +411,38 @@
     .container {
       .input {
         input {
-          margin: 33px 0 0px 48px;
+          margin: 33px 0 0px 0px;
         }
       }
       .hero {
+        margin-left: 7px;
         &--title {
           h4 {
-            margin-left: -130px;
+            margin-left: -233px;
+            font-size: 20px;
           }
           h1 {
-            margin-left: -134px;
+            margin-left: -237px;
+            font-size: 40px;
           }
           p {
-            width: 457px;
-            margin-left: -133px;
+            width: 455px;
+            margin-left: -228px;
           }
           video {
             display: none;
           }
         }
         &--image {
-          margin-right: 117px;
+          margin-right: 256px;
+          width: 438px;
+          height: 419px;
         }
         &--block {
-          left: 46px;
-          width: 501px;
+          left: -31px;
+          width: 470px;
           button {
-            padding: 13px 50px;
+            padding: 13px 34px;
           }
         }
       }
@@ -439,32 +455,32 @@
     .container {
       .input {
         input {
-          margin: 33px 0 0px 28px;
-          width: 418px;
+          margin: 33px 0 0px 6px;
+          width: 370px;
         }
       }
       .hero {
         &--title {
           h4 {
-            margin-left: -211px;
+            margin-left: -285px;
             font-size: 20px;
           }
           h1 {
-            margin-left: -211px;
+            margin-left: -289px;
             font-size: 40px;
             margin-top: -15px;
           }
           p {
             width: 397px;
-            margin-left: -201px;
+            margin-left: -291px;
             font-size: 19px;
             margin-top: -20px;
           }
         }
-        &--image{
-          width: 399px;
-          height: 362px;
-          margin-right: 212px;
+        &--image {
+          width: 384px;
+          height: 372px;
+          margin-right: 310px;
         }
         // &--block{
         //   width: 415px;
@@ -477,12 +493,12 @@
         //     margin-top: -54px;
         //   }
         // }
-        &--block{
+        &--block {
           font-size: 49%;
           width: 414px;
-          button{
+          button {
             font-size: 13px;
-            padding: 12px 40px;
+            padding: 12px 36px;
             margin-left: 20px;
           }
         }
@@ -492,14 +508,31 @@
 }
 
 @media (max-width: 450px) {
-  #hero{
-    .container{
-      .input{
-        input{
-          width: 373px;
+  #hero {
+    .container {
+      .input {
+        input {
+          width: 305px;
+          margin: 33px 0 0 0;
         }
       }
-      .hero{
+      .hero {
+        flex-direction: column;
+        &--title {
+          p {
+            width: 316px;
+            margin-left: -330px;
+            font-size: 17px;
+          }
+          h4 {
+            margin-left: -330px;
+          }
+          h1 {
+            margin-left: -335px;
+            font-size: 35px;
+            margin-top: -15px;
+          }
+        }
         // &--block{
         //   width: 390px;
         //   height: 153px;
@@ -509,7 +542,6 @@
         //   left: 35px;
         //   // margin-left: 20%;
         //   &__input{
-        
 
         //     align-items: center;
         //     display: flex;
@@ -528,49 +560,52 @@
 
         //     // position: absolute;
         //   }
-          
-          
+
         // }
-        &--image{
-          width: 382px;
-          height: 349px;
-          margin-right: 247px;
+        &--image {
+          width: 360px;
+          height: 335px;
+          margin-right: 352px;
         }
       }
     }
+    //   #hero .container .hero--title p {
+    //     width: 316px;
+    //     margin-left: -269px;
+    //     font-size: 17px;
+    // }
     #hero .container .hero--block__input span {
       margin-left: 18%;
-  }
-  #hero .container .hero--block img {
-    position: absolute;
-    left: 50px;
-    margin-top: 7px;
-    width: 13%;
-}
-  #hero .hero .hero--block .hero--block__input span {
+    }
+    #hero .container .hero--block img {
+      position: absolute;
+      left: 50px;
+      margin-top: 7px;
+      width: 13%;
+    }
+    #hero .hero .hero--block .hero--block__input span {
       color: #212121;
       font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       margin-left: 28%;
-  }
-  #hero .container .hero--block__input input {
-    margin-left: 28%;
-    font-size: 10px;
-  }
-  
-  #hero .container .hero--block {
-    /* display: flex; */
-    width: 376px;
-    height: 118px;
-    display: block;
-    font-size: 92%;
-    border-radius: 34px;
-    left: 4px;
-    top: 779px;
+    }
+    #hero .container .hero--block__input input {
+      margin-left: 28%;
+      font-size: 10px;
+    }
 
-  }
+    #hero .container .hero--block {
+      /* display: flex; */
+      width: 376px;
+      height: 118px;
+      display: block;
+      font-size: 92%;
+      border-radius: 34px;
+      left: 4px;
+      top: 779px;
+    }
   }
   #hero .hero .hero--block .hero--block__input {
     display: flex;
@@ -595,84 +630,125 @@
     top: 12px;
     margin-left: 44px;
   }
-  
-  }
- 
+}
+
 @media (max-width: 400px) {
   #hero .container .input input {
     width: 310px;
-    margin: 33px 0 0px 10px;
-}
-#hero .container .hero--title h4 {
-  margin-left: -277px;
-  font-size: 18px;
-}
-#hero .container .hero--title h1 {
-  margin-left: -279px;
-  font-size: 35px;
-  // margin-top: -21px;
-}
-#hero .container .hero--title p {
-  width: 294px;
-  margin-left: -276px;
-  font-size: 15px;
-  margin-top: -22px;
-}
-#hero .container .hero--image {
-  width: 342px;
-  height: 332px;
-  margin-right: 336px;
-}
-#hero .container .hero--block {
-  /* display: flex; */
-  width: 330px;
-  height: 188px;
-  left: -21px;
-}
-#hero .hero .hero--block .hero--block__input span {
-  font-size: 14px;
-}
-#hero .container .hero--block img {
-  position: absolute;
-  left: 53px;
-  margin-top: 6px;
-  width: 13%;
-}
-#hero .container .hero--block input {
-  font-size: 97%;
-  &::placeholder{
-    font-size: 15px;
+    margin: 33px 0 0px -5px;
   }
-}
-#hero .container .hero--block button {
-  font-size: 16px;
+  #hero .container .hero--title h4 {
+    margin-left: -342px;
+    font-size: 18px;
+  }
+  #hero .container .hero--title h1 {
+    margin-left: -342px;
+    font-size: 30px;
+    width: 322px;
+    // margin-top: -21px;
+  }
+  #hero .container .hero--title p {
+    width: 294px;
+    margin-left: -340px;
+    font-size: 15px;
+    margin-top: -22px;
+  }
+  #hero .container .hero--image {
+    width: 307px;
+    height: 287px;
+    left: -19px;
+    // margin-right: 390px;
+  }
+  #hero .container .hero--block {
+    /* display: flex; */
+    width: 308px;
+    height: 188px;
+    left: -23px;
+    top: 698px;
+  }
+  #hero .hero .hero--block .hero--block__input span {
+    font-size: 14px;
+  }
+  #hero .container .hero--block img {
+    position: absolute;
+    left: 53px;
+    margin-top: 6px;
+    width: 13%;
+  }
+  #hero .container .hero--block input {
+    font-size: 97%;
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+  #hero .container .hero--block button {
+    font-size: 16px;
+  }
+  #hero .container .hero {
+    margin-left: 23px;
 }
 }
 
 @media (max-width: 320px) {
-  .container{
+  .container {
     width: 90%;
   }
   #hero .container .input input {
-    width: 269px;
+    width: 242px;
+  }
+  #hero .container .hero--title h4 {
+    margin-left: -350px;
+    font-size: 15px;
+  }
+  #hero .container .hero--title h1 {
+    margin-left: -351px;
+    font-size: 25px;
+    width: 273px;
+  }
+  #hero .container .hero--title p {
+    width: 250px;
+    margin-left: -350px;
+    font-size: 15px;
+    margin-top: -22px;
+  }
+  #hero .container .hero--image {
+    width: 249px;
+    height: 234px;
+    // right: 38px;
+    left: -54px;
+    // margin-right: 458px;
+  }
+  #hero .hero .hero--image .four {
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+  }
+  #hero .hero .hero--block .hero--block__input {
+    margin-left: 39px;
+    input {
+      &::placeholder {
+      }
+    }
+  }
+  #hero .container .hero--block img {
+    position: absolute;
+    left: 14px;
+    margin-top: 15px;
+  }
+  #hero .container .hero--block button {
+    margin-left: -4px;
+  }
+  #hero .container .hero--block {
+    width: 235px;
+    height: 188px;
+    left: -23px;
+    top: 660px;
+  }
+  #hero .container .hero {
+    margin-left: 54px;
 }
-#hero .container .hero--title h4 {
-  margin-left: -290px;
-  font-size: 17px;
-}
-#hero .container .hero--title h1 {
-  margin-left: -307px;
-  font-size: 31px;
-  width: 348px;
-}
-#hero .container .hero--title p {
-  width: 250px;
-  margin-left: -308px;
-  font-size: 15px;
-  margin-top: -22px;
-}
-#hero .container .hero--title h4 {
-  margin-left: -308px;
-  font-size: 17px;
-}
+  // #hero .container .hero--title h4 {
+  //   margin-left: -308px;
+  //   font-size: 17px;
+  // }
 }

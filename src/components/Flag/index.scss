@@ -80,8 +80,47 @@
 @media (max-width: 768px) {
 }
 @media (max-width: 576px) {
+//   #flag .flag--select {
+//     display: flex;
+//     align-items: center;
+//     justify-content: start;
+//     flex-wrap: wrap;
+// }
 }
+@media (max-width: 500px) {
+  #flag{
+    .container{
+      h1{
+        font-size: 39px;
+      }
+      .flag{
+
+        &--select{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          select{
+            margin: 0 0 20px 0;
+          }
+        }
+        &--block{
+          &__one{
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
 @media (max-width: 450px) {
+  #flag .flag--select select {
+    font-size: 14px;
+}
 }
 @media (max-width: 400px) {
 }

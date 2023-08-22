@@ -13,6 +13,9 @@
     padding: 20px 0;
 
     &--title {
+      img {
+        width: 100%;
+      }
     }
 
     &--nav {
@@ -97,8 +100,8 @@
         font-weight: 400;
         &.active {
           position: relative;
-          &::before{
-            content: '';
+          &::before {
+            content: "";
             position: absolute;
             width: 10px;
             height: 10px;
@@ -249,8 +252,8 @@
     .container {
       .header {
         &--title {
-          img {
-            margin-left: -90%;
+          img{
+            margin-left: -66%;
           }
         }
         &--nav {
@@ -288,9 +291,9 @@
     .container {
       .header {
         &--title {
-          margin-right: 600px;
           img {
-            margin-left: -11%;
+            position: relative;
+            right: 230px;
           }
         }
         &--blur {
@@ -313,10 +316,10 @@
         &--nav1 {
           position: absolute;
           top: 0;
-          left: 40%;
+          left: 25%;
           backdrop-filter: blur(5px);
-          width: 30%;
-          height: 500px;
+          width: 43.5%;
+          height: 578px;
           background: #e9f3ff;
           margin-left: 30%;
           transition: 0.5s;
@@ -324,23 +327,22 @@
 
           &__navs1 {
             font-size: 20px;
-            margin: 50px 0 25px 35px;
-
+            margin: 50px 0 50px 35px;
           }
           &__about {
             font-size: 20px;
-            margin: 10px 0 25px 35px;
+            margin: 10px 0 50px 35px;
           }
           &__study {
             font-size: 20px;
-            margin: 10px 0 25px 35px;
+            margin: 10px 0 50px 35px;
           }
           &__contact {
             font-size: 20px;
-            margin: 10px 0 25px 35px;
+            margin: 10px 0 50px 35px;
           }
           &__language1 {
-            margin: 10px 35px 0 0;
+            margin: 10px 137px 50px 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -355,9 +357,10 @@
             align-items: center;
             justify-content: center;
             margin-top: 30px;
+            margin-left: -65px;
             h3 {
               margin: 0 10px;
-              font-size: 25px;
+              font-size: 35px;
             }
           }
         }
@@ -373,21 +376,9 @@
 }
 
 @media (max-width: 576px) {
-  #header {
-    .container {
-      .header {
-        &--title {
-          margin-right: 978px;
-        }
-        &--blur {
-          margin-left: -582px;
-        }
-        &--nav1 {
-          left: 30%;
-          width: 40%;
-        }
-      }
-    }
+  #header .container .header--title img {
+    position: relative;
+    right: 145px;
   }
 }
 
@@ -395,28 +386,45 @@
   #header {
     .container {
       .header {
+        padding: 23px 0;
         &--title {
           img {
-            width: 85%;
+            position: relative;
+            right: 117px;
+            width: 53px;
           }
         }
         &--burger {
           left: 89%;
         }
         &--blur {
-          margin-left: -655px;
+          margin-left: -1px;
           height: 1633%;
         }
         &--nav1 {
           left: 2%;
           width: 68%;
+          height: 592px;
+          &__navs1 {
+            margin: 50px 0 55px 35px;
+          }
+          &__contact {
+            margin: 1px 0 55px 35px;
+          }
+          &__study {
+            margin: 1px 0 57px 35px;
+          }
+          &__about {
+            margin: 10px 0 55px 35px;
+          }
           &__language1 {
             margin: 10px 145px 0 0;
           }
           &__icon {
-            margin-right: 95px;
+            margin-right: 40px;
+            margin-top: 70px;
             h3 {
-              font-size: 30px;
+              font-size: 35px;
             }
           }
         }
@@ -429,12 +437,21 @@
   #header {
     .container {
       .header {
+        padding: 33px 0;
+        &--title{
+          img{
+            position: relative;
+            // left: -218px;
+            width: 53px;
+            right: -17px;
+          }
+        }
         &--blur {
-          margin-left: -710px;
+          margin-left: -537px;
         }
         &--nav1 {
-          left: 19%;
-          width: 51%;
+          left: -2%;
+          width: 73%;
         }
       }
     }
@@ -445,11 +462,13 @@
   #header {
     .container {
       .header {
+        padding: 33px 0;
         &--title {
           margin-right: 1024px;
         }
         &--blur {
-          margin-left: -738px;
+          margin-left: 0;
+          height: 2773%;
         }
         &--nav1 {
           left: -8%;
@@ -477,15 +496,19 @@
   #header {
     .container {
       .header {
+        padding: 30px 0;
         &--title {
           margin-right: 1024px;
         }
         &--blur {
-          margin-left: -758px;
+          margin-left: -600px;
         }
         &--nav1 {
           left: -12%;
           width: 82%;
+          &__icon {
+            margin-right: -30px;
+          }
         }
         &--burger {
           left: 87%;
@@ -501,6 +524,7 @@
       .header {
         &--title {
           margin-right: 1024px;
+          width: 100%;
         }
         &--blur {
           margin-left: -784px;
@@ -513,7 +537,7 @@
             margin: 8px 176px 0 0;
           }
           &__icon {
-            margin-right: 78px;
+            margin-right: 33px;
             h3 {
               margin: 0 15px;
               font-size: 35px;
@@ -548,10 +572,11 @@
             margin: 8px 113px 0 0;
           }
           &__icon {
-            margin-right: 14px;
+            margin-right: -32px;
+            margin-top: 41px;
             h3 {
               margin: 0 15px;
-              font-size: 35px;
+              font-size: 29px;
             }
           }
         }
@@ -561,4 +586,12 @@
       }
     }
   }
+}
+.red-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 8px;
 }

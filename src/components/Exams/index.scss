@@ -143,7 +143,8 @@
 }
 @media (max-width: 992px) {
   #exams .container .exams--big__one {
-    margin-left: -56px;
+    margin-left: -24px;
+    width: 358px;
 }
 #exams .container .exams h1 {
  
@@ -152,6 +153,18 @@
 #exams .container .exams p {
   margin: 30px 0 60px 12%;
 }
+#exams .container .exams--big__two--block {
+  width: 432px;
+  margin-left: 23px;
+}
+#exams .exams--big__two--block__text h2 {
+  width: 75%;
+}
+#exams .exams--big__two--block__text h3 {
+  font-size: 17px;
+  padding: 3px 0;
+}
+
 }
 @media (max-width: 768px) {
   #exams .exams--big {
@@ -173,9 +186,7 @@
 }
 #exams .container .exams--big__one {
   margin-left: 33px;
-}
-#exams .container .exams--big__one {
-    height: 590px;
+  height: 545px;
 }
 }
 @media (max-width: 576px) {
@@ -242,13 +253,14 @@
 }
 @media (max-width: 320px) {
   #exams .container .exams p {
-    font-size: 14px;
-    width: 270px;
-    margin: 25px 0 60px 1%;
+    font-size: 13px;
+    width: 243px;
+    margin: 26px 0 60px 4%;
     text-align: inherit;
   }
   #exams .container .exams h1 {
     font-size: 33px;
+    margin-left: -131px;
   }
 
   #exams .exams--big__one--text {
@@ -260,6 +272,23 @@
   }
   #exams .container .exams--big__one {
     height: 495px;
+    width: 229px;
   }
+  #exams .exams--big__one--text h2 {
+    font-size: 14px;
+}
+#exams .exams--big__one--text h3 {
+  font-size: 15px;
+  line-height: 27px;
+}
+#exams .exams--big__one--text h5 {
+  font-size: 13px;
+  width: 203px;
+}
+#exams .container .exams--big__two--block {
+  width: 226px;
+  margin-left: -2px;
+  height: 383px;
+}
 
 }

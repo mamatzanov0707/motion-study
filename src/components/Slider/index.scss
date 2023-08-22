@@ -57,8 +57,8 @@
             line-height: 20px;
             margin: 15px 0 25px 43px;
 
-
           }
+          
 
           span {
             color: #FFF;
@@ -150,6 +150,7 @@
     font-size: 16px;
     margin-top: 19px;
   }
+  
   #Slider .Slider .Slider--block--one--text p {
     margin: -12px 0 6px 23px;
   }
@@ -160,6 +161,14 @@
 }
 
 @media (max-width: 320px){
+  iframe{
+    width: 300px;
+    height: 250px;
+  }
+  #Slider .Slider h1 {
+    font-size: 28px;
+    width: 102%;
+}
   #Slider .Slider .Slider--block--one--text {
     width: 255px;
     height: 168px;
@@ -183,4 +192,7 @@
     font-size: 12px;
     margin: 60% 0 0 172px;
   }
+  #Slider .Slider .Slider--block--one {
+    margin: 0 10px;
+}
 }
