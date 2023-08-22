@@ -2,9 +2,14 @@ import React from "react";
 import './index.scss'
 import {CiLocationOn} from "react-icons/ci";
 import greatBritain from "../FaceBack/greatBritain";
+import {NavLink} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {getPrREC} from "../stor/reducer/Action/action";
 
 
 const Britain = () => {
+
+    const dispatch = useDispatch()
     return (
         <section id="britain">
             <div className="container">
@@ -41,13 +46,13 @@ const Britain = () => {
 
                 {
                     greatBritain.map((el) => (
-                        <div className="country">
+                        <div className="country" onClick={() => dispatch(getPrREC(el))}>
                             <div className="country__cards">
                                 <div className="country__cards--card">
                                     <img src={el.img} alt=""/>
                                     <div className="country__cards--card__one1">
                                         <h4>Name:</h4>
-                                        <h3>{el.name}</h3>
+                                        <NavLink to="/tabs"><h3>{el.name}</h3></NavLink>
                                     </div>
                                     <div className="country__cards--card__one2">
                                         <div className="country__cards--card__one2--icon">
