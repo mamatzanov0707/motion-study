@@ -2,9 +2,13 @@ import React from "react";
 import {americadata} from "../../components/FaceBack/america";
 import './index.scss'
 import {CiLocationOn} from "react-icons/ci";
+import {NavLink} from "react-router-dom";
+import {getPrREC} from "../../components/stor/reducer/Action/action";
+import {useDispatch} from "react-redux";
 
 
 const Country = () => {
+    const dispatch = useDispatch()
     return (
         <section id="country">
             <div className="container">
@@ -41,7 +45,7 @@ const Country = () => {
 
                 {
                     americadata.map((el) => (
-                        <div className="country">
+                        <div className="country" onClick={()=> dispatch(getPrREC(el))}>
                             <div className="country__cards">
 
                                 <div className="country__cards--card">
@@ -51,7 +55,7 @@ const Country = () => {
                                 <div className="country__cards--ones">
                                     <div className="country__cards--ones__one1">
                                         <h4>Name:</h4>
-                                        <h3>{el.name}</h3>
+                                       <NavLink to={"/tabs"}><h3>{el.name}</h3></NavLink>
                                     </div>
                                     <div className="country__cards--ones__one2">
                                         <div className="country__cards--card__one2--icon">

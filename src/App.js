@@ -18,6 +18,7 @@ import German from "./components/Germany/german";
 import Holland from "./components/Holland/Holland";
 import Ireland from "./components/Ireland/Ireland";
 import English from "./Page/Hero/English/English";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -30,7 +31,7 @@ function App() {
     }, [])
     return (
         <>
-            <Loading load={load}/>
+            {/*<Loading load={load}/>*/}
 
 
             <div style={{
@@ -54,6 +55,7 @@ function App() {
                         <Route path={'/ireland'} element={<Ireland/>}/>
                         <Route path={'/english'} element={<English/>}/>
                          <Route path={'/cambridge'} element={<English/>}/>
+                         <Route path={'/tabs'} element={<Tabs/>}/>
                     </Routes>
                     <Footer/>
                 </div>
