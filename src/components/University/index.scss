@@ -189,11 +189,20 @@
   #university h1 {
     text-align: center;
   }
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 
 }
 @media (max-width: 768px) {
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 }
 @media (max-width: 576px) {
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 }
 @media (max-width: 450px) {
   #university .university--title img {
@@ -234,14 +243,19 @@
     text-align: center;
     font-size: 30px;
   }
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 
 }
 @media (max-width: 400px) {
-
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 }
 @media (max-width: 376px) {
   #university .university--title img {
-    width: 377px;
+    width: 357px;
     height: 302px;
     margin-left: 20px;
   }
@@ -249,6 +263,95 @@
     text-align: center;
     font-size: 25px;
   }
+  #university .university--title img {
+    margin-left: 5px;
+  }
+  #university .university--text__spec {
+    width: 337px;
+    height: 304px;
+    margin-left: -10px;
+  }
+  #university .university--text__location {
+    width: 339px;
+    margin-left: -10px;
+  }
+  #university .university--text__location h1 span {
+    font-size: 16px;
+  }
+  #university .university--text__date {
+    width: 340px;
+    margin-left: -10px;
+  }
+  #university .university--text__date h1 span {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  #university .university--text__type {
+    width: 336px;
+    margin-left: -10px;
+  }
+  #university .university--text__type h1 span {
+    font-size: 16px;
+  }
+  #university .university--text__language {
+    width: 340px;
+    margin-left: -10px;
+  }
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
 }
 @media (max-width: 320px) {
+  #university .university--title img {
+    margin-bottom: -68px;
+  }
+  #university .university--text__spec {
+    width: 302px;
+    height: 304px;
+    margin-left: 12px;
+  }
+  #university .university--text__location {
+    width: 276px;
+    margin-left: -5px;
+  }
+  #university .university--text__location h1 span {
+    font-size: 11px;
+    margin-left: -30px;
+  }
+  #university .university--text__date {
+    width: 276px;
+    margin-left: -5px;
+  }
+  #university .university--text__date h1 span {
+    font-size: 12px;
+    margin-left: -13px;
+  }
+  #university .university--text__type {
+    width: 276px;
+    margin-left: -5px;
+  }
+  #university .university--text__type h1 {
+    font-size: 12px;
+    margin-left: -40px;
+  }
+  #university .university--text__type h2 {
+  display: none;
+  }
+  #university .university--text__language {
+    width: 276px;
+    margin-left: -5px;
+  }
+  #university .university--text__spec {
+    width: 283px;
+    height: 304px;
+    margin-left: -10px;
+  }
+  #university .university--text__type h1 span {
+    font-size: 12px;
+    margin-left: -40px;
+  }
+  #university .university--text__type h1 {
+    font-size: 12px;
+    margin-left: -32px;
+  }
 }
