@@ -933,52 +933,52 @@
   }
 }
 
-@media (max-width: 768px) {
-  #tabs .tabs--content__active {
-    margin-left: auto;
-    flex-wrap: wrap;
-    padding-top: 20px;
+  @media (max-width: 768px) {
+    #tabs .tabs--content__active {
+      margin-left: auto;
+      flex-wrap: wrap;
+      padding-top: 20px;
+    }
+    #tabs .tabs--bloc {
+      width: 665px;
+    }
+    #tabs .tabs--content__active--nikes {
+      width: 331px;
+      margin-left: 43px;
+    }
+    #tabs .tabs--bloc {
+      width: 600px;
+      margin-left: auto;
+    }
+    #tabs .tabs--content__active--nike {
+      margin-left: auto;
+    }
+    #tabs .tabs--content__active--nikes {
+      padding-top: 80px;
+      margin-left: 130px;
+    }
+    #tabs .tabs--content__active--nike__awards h1 span::before {
+      width: 448.008px;
+    }
+    #tabs .tabs--content__active--nike__hover p span::before {
+      width: 226.06099999999998px;
+    }
+    #tabs .tabs--content__active--nike__hovers p span::before {
+      width: 228.06099999999998px;
+    }
+    #tabs .tabs--content__active--nike__hovers p span::before {
+      width: 228.06099999999998px;
+    }
+    #tabs .tabs--content__active--nike__love h1 span::before {
+      width: 450.008px;
+    }
+    #tabs .tabs--content__active--nike__fee--no p span::before {
+      width: 227.06099999999998px;
+    }
+    #tabs .tabs--content__active--nikes {
+      padding-top: 80px;
+    }
   }
-  #tabs .tabs--bloc {
-    width: 665px;
-  }
-  #tabs .tabs--content__active--nikes {
-    width: 331px;
-    margin-left: 43px;
-  }
-  #tabs .tabs--bloc {
-    width: 600px;
-    margin-left: auto;
-  }
-  #tabs .tabs--content__active--nike {
-    margin-left: auto;
-  }
-  #tabs .tabs--content__active--nikes {
-    padding-top: 80px;
-    margin-left: 130px;
-  }
-  #tabs .tabs--content__active--nike__awards h1 span::before {
-    width: 448.008px;
-  }
-  #tabs .tabs--content__active--nike__hover p span::before {
-    width: 226.06099999999998px;
-  }
-  #tabs .tabs--content__active--nike__hovers p span::before {
-    width: 228.06099999999998px;
-  }
-  #tabs .tabs--content__active--nike__hovers p span::before {
-    width: 228.06099999999998px;
-  }
-  #tabs .tabs--content__active--nike__love h1 span::before {
-    width: 450.008px;
-  }
-  #tabs .tabs--content__active--nike__fee--no p span::before {
-    width: 227.06099999999998px;
-  }
-  #tabs .tabs--content__active--nikes {
-    padding-top: 80px;
-  }
-}
 
 @media (max-width: 576px) {
   #tabs .tabs--bloc {

@@ -59,7 +59,7 @@ const Hero = () => {
                 <div className="input">
                     <BiSearch className="input--icon"/>
                     <NavLink to={"/country"}>
-                        <input type="text" placeholder="Поиск..."/>
+                        {/*<input type="text" placeholder="Поиск..."/>*/}
                     </NavLink>
                 </div>
                 <div className="hero">
