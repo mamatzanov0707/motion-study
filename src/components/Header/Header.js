@@ -86,6 +86,9 @@ const Header = () => {
                                  onClick={() => setIsBurgerOpen(false)}>
                                 <a onClick={() => {
                                     setRedDotPosition(4);
+                                    window.scroll(0, 3100);
+                                }}>
+                                    Contacts {redDotPosition === 4 &&
                                     window.scroll(0, 3300);
                                 }}>
                                    <span> Contacts </span>{redDotPosition === 4 &&
@@ -123,6 +126,7 @@ const Header = () => {
                                     <NavLink to="/studyAbroad">Study Abroad</NavLink>
                                 </div>
                                 <div className="header--nav__contact">
+                                    <NavLink to="/contacts">Contacts</NavLink>
                                     <NavLink to="/message">Contacts</NavLink>
                                 </div>
                             </div>
@@ -155,6 +159,23 @@ const Header = () => {
                                          onClick={() => setIsBurgerOpen(false)}>
                                         <a onClick={() => window.scroll(0, 3100)}>Contacts</a>
 
+                                        <NavLink to="/contacts">Contacts</NavLink>
+                                    </div>
+                                    <div className="header--nav1__language1">
+                                        <NavLink to="/contacts">Contacts</NavLink>
+                                    </div>
+                                    <div className="header--nav1__language1">
+                                        <h3>EN</h3>
+                                        <h3>RU</h3>
+                                        <h3>KG</h3>
+                                    </div>
+
+                                    <div className="header--nav1__icon">
+                                        <h3><FaTelegramPlane/></h3>
+                                        <h3><AiFillInstagram/></h3>
+                                        <h3><BsTelephoneXFill/></h3>
+                                        <h3><MdEmail/></h3>
+                                    </div>
                                         {/*<NavLink to="/contacts">Contacts</NavLink>*/}
                                     </div>
                                     {/*<div className="header--nav1__language1">*/}
@@ -185,6 +206,9 @@ const Header = () => {
                             </NavLink>
                         </div>
                         <div className="header--language">
+                            <select>
+                                <option>EN</option>
+                                <option>RU</option>
                             <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
                                 <option value="en">EN</option>
                                 <option value="ru">RU</option>

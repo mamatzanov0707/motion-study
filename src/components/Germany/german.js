@@ -13,7 +13,6 @@ const German = () => {
         <section id="germany">
             <div className="container">
                 <h1>United Stated</h1>
-
                 <div className="select">
                     <select>
                         <option value="#">Higher Education</option>
