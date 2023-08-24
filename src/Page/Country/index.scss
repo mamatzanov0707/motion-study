@@ -253,59 +253,24 @@
   }
 }
 
-@media (max-width: 450px) {
-  #country {
-    .container {
-      .select {
-        margin: 38px 0 50px -211px;
-      }
-      .country {
-        &__cards {
-          &--card {
-            width: 399px;
-          }
-          height: 184px;
-          width: 389px;
-          &--ones {
-            flex-direction: column;
-            margin-left: -196px;
-            &__one2 {
-              margin-left: -57px;
-            }
-          }
+  @media (max-width: 450px) {
+    #country {
+      .container {
+        .select {
+          margin: 38px 0 50px -211px;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  #country {
-    .container {
-      .select {
-        margin: 38px 0 50px -169px;
-      }
-      .country {
-        &__cards {
-          height: 159px;
-          width: 347px;
-          &--card {
-            img {
-              width: 130px;
-              height: 124px;
+        .country {
+          &__cards {
+            &--card {
+              width: 399px;
             }
-          }
-          &--ones {
-            margin-left: -226px;
-
-            &__one1 {
-              h3 {
-                padding: 3px 0;
-              }
-            }
-            &__one2 {
-              h3 {
-                padding: 3px 0;
+            height: 184px;
+            width: 389px;
+            &--ones {
+              flex-direction: column;
+              margin-left: -196px;
+              &__one2 {
+                margin-left: -57px;
               }
             }
           }
@@ -313,7 +278,42 @@
       }
     }
   }
-}
+
+  @media (max-width: 400px) {
+    #country {
+      .container {
+        .select {
+          margin: 38px 0 50px -169px;
+        }
+        .country {
+          &__cards {
+            height: 159px;
+            width: 347px;
+            &--card {
+              img {
+                width: 130px;
+                height: 124px;
+              }
+            }
+            &--ones {
+              margin-left: -226px;
+
+              &__one1 {
+                h3 {
+                  padding: 3px 0;
+                }
+              }
+              &__one2 {
+                h3 {
+                  padding: 3px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
 @media (max-width: 376px) {
 }

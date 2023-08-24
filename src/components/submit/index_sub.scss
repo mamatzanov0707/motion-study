@@ -222,7 +222,7 @@
       &--block {
         width: 510px !important;
         height: 520px;
-        margin-left: -30px;
+        margin-left: -80px;
 
         &__car {
           margin: 0 0 1px -15px;
@@ -258,7 +258,7 @@
 
       &--help {
         width: 456px;
-        margin-left: -30px;
+        margin-left: -70px;
 
         &__cop {
           margin-left: -1px;
@@ -269,7 +269,7 @@
   }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 450px) {
   #message {
     .message {
       &--submit {
@@ -277,7 +277,7 @@
       }
 
       &--block {
-        margin-left: -35px;
+        margin-left: -85px;
         width: 400px !important;
         height: 510px;
 
@@ -310,7 +310,7 @@
       &--help {
         padding: 50px 20px;
         width: 400px;
-        margin-left: -35px;
+        margin-left: -85px;
 
         &__icons {
           &--copy {
@@ -348,7 +348,7 @@
       &--block {
         width: 320px !important;
         height: 520px;
-        margin-left: -20px;
+        margin-left: -70px;
 
         &__car {
           margin: 0 0 1px -30px;
@@ -379,7 +379,7 @@
 
 
       &--help {
-        margin-left: -20px;
+        margin-left: -70px;
         width: 318px;
         height: 580px;
 
@@ -423,7 +423,7 @@
       &--block {
         width: 320px !important;
         height: 520px;
-        margin-left: -20px;
+        margin-left: -70px;
 
         &__car {
           margin: 0 0 1px -30px;
@@ -454,7 +454,7 @@
 
 
       &--help {
-        margin-left: -20px;
+        margin-left: -70px;
         width: 318px;
         height: 580px;
 
@@ -496,9 +496,9 @@
   #message {
     .message {
       &--block {
-        width: 300px !important;
+        width: 286px !important;
         height: 520px;
-        margin-left: -45px;
+        margin-left: -85px;
 
         &__car {
           margin: 0 0 1px -30px;
@@ -507,7 +507,7 @@
             padding: 10px 0;
 
             input {
-              width: 280px;
+              width: 240px;
               height: 35px;
               margin-left: 25px;
             }
@@ -516,20 +516,21 @@
 
         &__tools { //margin-top: 1px;
           input {
-            width: 280px;
+            width: 243px;
             height: 50px;
             margin-left: -3px;
           }
         }
 
         button {
-          margin: 40px 29px;
+          margin: 40px 6px;
+          //width: 157px;
         }
       }
 
 
       &--help {
-        margin-left: -45px;
+        margin-left: -92px;
         width: 300px;
         height: 580px;
 

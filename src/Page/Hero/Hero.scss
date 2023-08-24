@@ -1,7 +1,9 @@
 #hero {
-  padding: 100px 0;
   position: relative;
-
+  padding: 5% 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   .input {
     display: flex;
     width: 335px;
@@ -9,7 +11,6 @@
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-    display: none;
     &--icon {
       font-size: 200px;
       z-index: 99;
@@ -55,18 +56,18 @@
           line-height: normal;
         }
         input {
-          outline: none;
+          //outline: none;
         }
       }
       button {
         border-radius: 80px;
-        background: #109fef;
+        //background: #109fef;
         padding: 15px 70px;
         color: #fff;
         position: relative;
         display: inline-block;
         background-color: #3498db;
-        color: #fff;
+        //color: #fff;
         border: none;
         cursor: pointer;
         &::after {
@@ -287,7 +288,7 @@
             margin-left: 80%;
             margin-top: -69px;
           }
-          
+
           h4 {
             font-size: 18px;
             margin-left: -39px;
@@ -394,13 +395,16 @@
 
       .input {
         display: block;
+        margin-left: 101px;
+        margin-top: 40px;
+        width: 335px;
+        height: 37px;
+        border: 1px solid  #5609BB;
+        border-radius: 8px;
         input {
           margin: 37px 0 0px 40px
+
         }
-        // &--icon {
-        //   top: 10px;
-        //   left: 182px;
-        // }
       }
     }
   }
@@ -410,6 +414,7 @@
   #hero {
     .container {
       .input {
+        margin-left: 69px;
         input {
           margin: 33px 0 0px 0px;
         }
@@ -450,67 +455,12 @@
   }
 }
 
-@media (max-width: 500px) {
-  #hero {
-    .container {
-      .input {
-        input {
-          margin: 33px 0 0px 6px;
-          width: 370px;
-        }
-      }
-      .hero {
-        &--title {
-          h4 {
-            margin-left: -285px;
-            font-size: 20px;
-          }
-          h1 {
-            margin-left: -289px;
-            font-size: 40px;
-            margin-top: -15px;
-          }
-          p {
-            width: 397px;
-            margin-left: -291px;
-            font-size: 19px;
-            margin-top: -20px;
-          }
-        }
-        &--image {
-          width: 384px;
-          height: 372px;
-          margin-right: 310px;
-        }
-        // &--block{
-        //   width: 415px;
-        //   height: 113px;
-        //   &__input{
-        //     margin-top: -53px;
-        //     margin-left: 21px;
-        //   }
-        //   img{
-        //     margin-top: -54px;
-        //   }
-        // }
-        &--block {
-          font-size: 49%;
-          width: 414px;
-          button {
-            font-size: 13px;
-            padding: 12px 36px;
-            margin-left: 20px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 450px) {
   #hero {
     .container {
       .input {
+        width: 284px;
+        margin-left: 9px;
         input {
           width: 305px;
           margin: 33px 0 0 0;
@@ -640,6 +590,9 @@
     margin-left: -342px;
     font-size: 18px;
   }
+  #Slider .Slider h1 {
+    font-size: 30px;
+  }
   #hero .container .hero--title h1 {
     margin-left: -342px;
     font-size: 30px;
@@ -693,7 +646,7 @@
     width: 90%;
   }
   #hero .container .input input {
-    width: 242px;
+    width: 212px;
   }
   #hero .container .hero--title h4 {
     font-size: 15px;
@@ -720,6 +673,10 @@
     position: absolute;
     bottom: 8px;
     right: 20px;
+  }
+  #hero .container .input {
+    width: 253px;
+    margin-left: 9px;
   }
   #hero .hero .hero--block .hero--block__input {
     margin-left: 39px;
