@@ -4,6 +4,8 @@ import "./index.scss"
 
 const University = () => {
     const {product} = useSelector(s => s.ProductReducer)
+
+    // console.log(p)
     return (
         <div id="university">
             <div className="container">
