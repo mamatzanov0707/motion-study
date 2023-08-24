@@ -19,6 +19,7 @@ import Holland from "./components/Holland/Holland";
 import Ireland from "./components/Ireland/Ireland";
 import English from "./Page/Hero/English/English";
 import Tabs from "./components/Tabs/Tabs";
+import {LanguageProvider} from "./components/Lang/LanguageContext";
 
 function App() {
     const [load, setLoad] = useState(true)
@@ -38,26 +39,27 @@ function App() {
                 display: load ? 'none' : 'block'
             }}>
                 <div className="App">
-                    <Header/>
-                    <Routes>
-                        <Route path={'/'} element={<HeroPage/>}/>
-                        <Route path={'/aboutUs'} element={<AboutUs/>}/>
-                        <Route path={'/studyAbroad'} element={<Study/>}/>
-                        <Route path={'/contacts'} element={<Contact/>}/>
-                        <Route path={'/flag'} element={<FlagCard/>}/>
-                        <Route path={'/country'} element={<Country/>}/>
-                        <Route path={'/other'} element={<Other/>}/>
-                        <Route path={'/ielts'} element={<Items/>}/>
-                        <Route path={'/artis'} element={<Artis/>}/>
-                        <Route path={'/britain'} element={<Britain/>}/>
-                        <Route path={'/germany'} element={<German/>}/>
-                        <Route path={'/holland'} element={<Holland/>}/>
-                        <Route path={'/ireland'} element={<Ireland/>}/>
-                        <Route path={'/english'} element={<English/>}/>
-                         <Route path={'/cambridge'} element={<English/>}/>
-                         <Route path={'/tabs'} element={<Tabs/>}/>
-                    </Routes>
-                    <Footer/>
+                   <LanguageProvider>
+                       <Header/>
+                       <Routes>
+                           <Route path={'/'} element={<HeroPage/>}/>
+                           <Route path={'/aboutUs'} element={<AboutUs/>}/>
+                           <Route path={'/studyAbroad'} element={<Study/>}/>
+                           <Route path={'/flag'} element={<FlagCard/>}/>
+                           <Route path={'/country'} element={<Country/>}/>
+                           <Route path={'/other'} element={<Other/>}/>
+                           <Route path={'/ielts'} element={<Items/>}/>
+                           <Route path={'/artis'} element={<Artis/>}/>
+                           <Route path={'/britain'} element={<Britain/>}/>
+                           <Route path={'/germany'} element={<German/>}/>
+                           <Route path={'/holland'} element={<Holland/>}/>
+                           <Route path={'/ireland'} element={<Ireland/>}/>
+                           <Route path={'/english'} element={<English/>}/>
+                           <Route path={'/cambridge'} element={<English/>}/>
+                           <Route path={'/tabs'} element={<Tabs/>}/>
+                       </Routes>
+                       <Footer/>
+                   </LanguageProvider>
                 </div>
             </div>
         </>
