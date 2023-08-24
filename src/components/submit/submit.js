@@ -6,6 +6,7 @@ import {PiTelegramLogoDuotone} from "react-icons/pi";
 import {CopyToClipboard} from "react-copy-to-clipboard";
 import {IoCopyOutline} from "react-icons/io5";
 import emailjs from "@emailjs/browser";
+import {useLanguage} from "../Lang/LanguageContext";
 
 
 const Message = () => {
@@ -44,44 +45,70 @@ const Message = () => {
             setIsError(false);
         }
     };
+    const {language} = useLanguage()
+    const languageCard = {
+        en : {
+          send :'Send a message',
+            name:'First Name',
+            one:'Last Name',
+            car:'phone',
+            email :'email',
+            com:'Group or Company',
+            hel:'how can we help?',
+            buttons:'Submit',
+            info :'contact Info'
+        },
+        ru :{
+            send:'Отправить сообщение',
+            name :'Имя\n',
+            one :'Фамилия\n',
+            car:'телефон\n',
+            email:'электронная почта\n',
+            com:'Группа или Компания\n',
+            hel:'как мы можем помочь?\n',
+            buttons:'Представлять',
+            info: 'Контактная информация\n'
+        }
+
+    }
 
     return (
         <div id="message">
             <div className="container">
                 <div className="message">
                     <div className='message--block'>
-                        <h4>Send a message</h4>
+                        <h4>{languageCard[language].send}</h4>
                         <form onSubmit={onFormSubmit} action='#'>
                             <div className='message--block__car'>
                                 <div className='message--block__car--input'>
                                     <input value={inputValue} onChange={handleInputChange}
-                                           className={isError ? 'error' : ''} type="text" placeholder='First Name'/>
+                                           className={isError ? 'error' : ''} type="text" placeholder={languageCard[language].name}/>
                                 </div>
                                 <div className='message--block__car--input'>
-                                    <input type="text" placeholder='Last Name'/>
+                                    <input type="text" placeholder={languageCard[language].one}/>
                                 </div>
                             </div>
 
                             <div className='message--block__car'>
                                 <div className='message--block__car--input'>
-                                    <input type="number" placeholder='phone'/>
+                                    <input type="number" placeholder={languageCard[language].car}/>
                                 </div>
                                 <div className='message--block__car--input'>
-                                    <input type="email" placeholder='email'/>
+                                    <input type="email" placeholder={languageCard[language].email}/>
                                 </div>
 
                             </div>
                             <div className='message--block__tools'>
-                                <input type="text" placeholder='Group or Company'/>
+                                <input type="text" placeholder={languageCard[language].com}/>
                             </div>
                             <div className='message--block__tools'>
-                                <input type="text" placeholder='how can we help?'/>
+                                <input type="text" placeholder={languageCard[language].hel}/>
                             </div>
-                            <button>Submit</button>
+                            <button>{languageCard[language].buttons}</button>
                         </form>
                     </div>
                     <div className='message--help'>
-                        <h3>contact Info</h3>
+                        <h3>{languageCard[language].info}</h3>
                         <div className='message--help__icons'>
                             <BsTelephoneInbound className='text-3xl' style={{color: 'white'}}/>
                             <a onClick={() => setIconsValue(true)} href="tel:+996 500 34 84 39">+996 500 34 84 39</a>

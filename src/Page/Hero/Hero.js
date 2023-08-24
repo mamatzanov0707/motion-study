@@ -22,13 +22,20 @@ const Hero = () => {
             tools: 'EXPLORE THE WORLD',
             too: 'Study abroad with our help',
             car: ' Study at the world\'s top universities and expand your horizons.\n' +
-                '                        Get the highest quality education and achieve success abroad.'
+                '                        Get the highest quality education and achieve success abroad.',
+            name: "Name",
+            tel:'PHONE',
+            con: 'Contact'
+
         },
         ru: {
             tools: 'Иследовать мир ',
             too: 'Обучение за границей с нашей помощью',
             car: 'Учитесь в лучших университетах мира и расширяйте свой кругозор.\n' + '                      ' +
-                '  Получите высшее качественное образование и добейтесь успеха за границей.'
+                '  Получите высшее качественное образование и добейтесь успеха за границей.',
+            name:'Имя',
+            tel:'Телефон',
+            con: 'Контакт'
         }
     }
     useEffect(() => {
@@ -81,15 +88,15 @@ const Hero = () => {
                     <div data-aos="zoom-in-right" className="hero--block">
                         <img src={block1} alt=""/>
                         <div className="hero--block__input">
-                            <span>NAME</span>
+                            <span>{translations[language].name}</span>
                             <input placeholder="|Enter your name" type="text"/>
                         </div>
                         <img src={block2} alt=""/>
                         <div className="hero--block__input">
-                            <span>NAME</span>
+                            <span>{translations[language].tel}</span>
                             <input placeholder="|Enter your phone" type="text"/>
                         </div>
-                        <button>Contact</button>
+                        <button>{translations[language].con}</button>
                     </div>
                 </div>
 

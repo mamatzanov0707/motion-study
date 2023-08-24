@@ -1,12 +1,22 @@
 import React from 'react';
 import './index.scss'
+import {useLanguage} from "../Lang/LanguageContext";
 
 const Slider = () => {
+    const {language} = useLanguage()
+    const languageCard = {
+        en :{
+            slider:'Video testimonials from our students'
+        },
+        ru : {
+            slider: 'Видеоотзывы наших учеников\n'
+        }
+    }
     return (
         <div id='Slider'>
             <div className="container">
                 <div className='Slider'>
-                    <h1>Video testimonials from our students</h1>
+                    <h1>{languageCard[language].slider}</h1>
                     <div className='Slider--block'>
 
                         <div className='Slider--block--one'>

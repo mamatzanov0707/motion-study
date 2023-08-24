@@ -235,14 +235,17 @@
 }
 
 #search{
-  margin-left: 66.5%;
+  margin-left: 70.5%;
   .search{
     &--top{
-      border-radius: 20px;
-      background: red;
+      -we-webkit-box-shadow: 4px 4px 12px 0px rgba(7, 110, 199, 0.2);
+      -moz-box-shadow: 4px 4px 12px 0 rgba(3, 32, 58, 0.82);
+      box-shadow: 4px 4px 12px 0 rgba(11, 58, 98, 0.2);
+      background: white;
       width: 150px;
       margin: 5px;
       h4{
+        cursor: pointer;
         text-align: center;
         font-size: 17px;
         color: #130202;

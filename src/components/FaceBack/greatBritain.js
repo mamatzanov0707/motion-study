@@ -1,4 +1,4 @@
-export const greatBritain = [
+export const data = [
     {
         id: 1,
         name: "So University",
@@ -71,4 +71,3 @@ export const greatBritain = [
     }
 
 ]
-export default greatBritain;
