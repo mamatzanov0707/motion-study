@@ -21,17 +21,43 @@ const Header = () => {
     const [activeBurgerMenuItem, setActiveBurgerMenuItem] = useState(null);
     const [redDotPosition, setRedDotPosition] = useState(0);
     const [searchCard, setSearchCard] = useState(false)
+    const [searchBlock, setSearchBlock] = useState(false)
     const [value, setValue] = useState('1')
+    const [name,setName]=useState("")
+
     const nav = useNavigate()
+    const translate = {
+        en : {
+           home: 'Home',
+            about: 'About Us',
+            study: 'Study abroad',
+            contact: 'Contact',
+        },
+        ru : {
+           home: 'Дом',
+            about: 'O нас',
+            study: 'Учеба за границей',
+            contact: 'Контакт',
+        }
+
+    }
 
     const filter = Search.filter((item) => item.name.toLowerCase().includes(value) || item.name.toUpperCase().includes(value))
-    console.log("zamir", filter)
     const handleResize = () => {
         setWindowWidth(window.innerWidth);
         if (window.innerWidth > 768) {
             setIsBurgerOpen(false);
         }
     };
+    function getSearch(el) {
+        setName(el.name)
+        nav(`/${el.name}`) && setValue("")
+        setSearchBlock(true)
+    }
+    function getEmptySearch(e) {
+        setSearchBlock(false)
+        setValue("")
+    }
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
@@ -39,8 +65,8 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    console.log(value)
-    console.log(filter)
+    console.log("searchBlock",searchBlock)
+    console.log("name",name)
 
     return (
         <>
@@ -64,21 +90,21 @@ const Header = () => {
                             <div className="header--nav1__navs1"
                                  onClick={() => setIsBurgerOpen(false)}>
                                 <NavLink to="/" onClick={() => setRedDotPosition(1)}>
-                                    Home {redDotPosition === 1 &&
+                                    {translate[language].home} {redDotPosition === 1 &&
                                     <div className="red-dot"></div>}
                                 </NavLink>
                             </div>
                             <div className="header--nav1__about"
                                  onClick={() => setIsBurgerOpen(false)}>
                                 <NavLink to="/aboutUs" onClick={() => setRedDotPosition(2)}>
-                                    AboutUs {redDotPosition === 2 &&
+                                    {translate[language].about} {redDotPosition === 2 &&
                                     <div className="red-dot"></div>}
                                 </NavLink>
                             </div>
                             <div className="header--nav1__study"
                                  onClick={() => setIsBurgerOpen(false)}>
                                 <NavLink to="/studyAbroad" onClick={() => setRedDotPosition(3)}>
-                                    Study Abroad {redDotPosition === 3 &&
+                                    {translate[language].study} {redDotPosition === 3 &&
                                     <div className="red-dot"></div>}
                                 </NavLink>
                             </div>
@@ -88,8 +114,8 @@ const Header = () => {
                                     setRedDotPosition(4);
                                     window.scroll(0, 3100);
                                 }}>
-                                    Contacts {redDotPosition === 4 &&
-                                    window.scroll(0, 3300);
+                                    {translate[language].contact} {redDotPosition === 4 &&
+                                    window.scroll(0, 3300)
                                 }}>
                                    <span> Contacts </span>{redDotPosition === 4 &&
                                     <div className="red-dot"></div>}
@@ -119,15 +145,15 @@ const Header = () => {
                         ) : (
                             <div className="header--nav">
                                 <div className="header--nav__navs">
-                                    <NavLink to="/">Home</NavLink></div>
+                                    <NavLink to="/">{translate[language].home}</NavLink></div>
                                 <div className="header--nav__about">
-                                    <NavLink to="/aboutUs">AboutUs</NavLink></div>
+                                    <NavLink to="/aboutUs">{translate[language].about}</NavLink></div>
                                 <div className="header--nav__study">
-                                    <NavLink to="/studyAbroad">Study Abroad</NavLink>
+                                    <NavLink to="/studyAbroad">{translate[language].study}</NavLink>
                                 </div>
                                 <div className="header--nav__contact">
-                                    <NavLink to="/contacts">Contacts</NavLink>
-                                    <NavLink to="/message">Contacts</NavLink>
+                                    {/*<NavLink to="/contacts">Contacts</NavLink>*/}
+                                    <NavLink to="/message">{translate[language].contact}</NavLink>
                                 </div>
                             </div>
                         )}
@@ -176,8 +202,7 @@ const Header = () => {
                                         <h3><BsTelephoneXFill/></h3>
                                         <h3><MdEmail/></h3>
                                     </div>
-                                        {/*<NavLink to="/contacts">Contacts</NavLink>*/}
-                                    </div>
+
                                     {/*<div className="header--nav1__language1">*/}
                                     {/*<NavLink to="/contacts">Contacts</NavLink>*/}
                                     {/*</div>*/}
@@ -200,15 +225,15 @@ const Header = () => {
                         <div onClick={() => setSearchCard(!searchCard)}
                              className="header--input">
                             <BiSearch className="header--input__icon"/>
-                            <NavLink to={"/country"}>
+                            <NavLink to={"/america"}>
                                 <input type="text" placeholder="Поиск..."
-                                       onChange={event => setValue(event.target.value)}/>
+                                       onChange={event => setValue(event.target.value)} onClick={() => getEmptySearch()}
+                                        value={value}
+
+                                />
                             </NavLink>
                         </div>
                         <div className="header--language">
-                            <select>
-                                <option>EN</option>
-                                <option>RU</option>
                             <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
                                 <option value="en">EN</option>
                                 <option value="ru">RU</option>
@@ -218,16 +243,16 @@ const Header = () => {
                 </div>
             </div>
             <div id='search'>
-                <div className="container">
+                <div className="container" hidden={searchBlock}>
                     <div className='search' style={{
-                        display: filter
+                        display:  filter
                             ? 'block' : 'none'
                     }}>
                         {
                             value &&
                             filter.map((el) => (
                                 <div className='search--top'>
-                                    <h4 onClick={() => nav('/')} key={el.id}>{el.name}</h4>
+                                    <h4 onClick={() => getSearch(el)}  key={el.id}>{el.name}</h4>
                                 </div>
                             ))
                         }

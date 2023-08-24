@@ -2,16 +2,25 @@ import React from 'react';
 import './Study.scss'
 import map from '../../img/map.svg'
 import {Link, NavLink} from "react-router-dom";
-import English from "../Hero/English/English";
 import logo from './../../img/map-12.svg'
+import {useLanguage} from "../../components/Lang/LanguageContext";
 
 const Study = () => {
+    const {language} = useLanguage()
+    const languageCard = {
+        en : {
+            abroad :'Study Abroad',
+        },
+        ru:{
+            abroad: 'Учеба за границей\n'
+        }
+    }
     return (
        <>
            <div id='study'>
                <div className="container">
                    <div className='study'>
-                       <h2>Study Abroad</h2>
+                       <h2>{languageCard[language].abroad}</h2>
                        <div className='study--line'></div>
                        <div className='study--block'>
                            <div className='study--block--motion'>

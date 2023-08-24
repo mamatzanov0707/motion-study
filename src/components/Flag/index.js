@@ -13,6 +13,7 @@ import China from "../../img/china.png";
 import latvia from "../../img/latvia.png";
 import { NavLink } from "react-router-dom";
 
+
 const Flag = () => {
     return (
         <section id="flag">
@@ -46,73 +47,73 @@ const Flag = () => {
                         </div>
                     </div>
                     <div className="flag--block">
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/America"}>
                             <div className="flag--block__one">
                                 <img src={amertica} alt="img"/>
                                 <h2>America</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/britain"}>
+                        <NavLink to={"/Great%20Britain"}>
                             <div className="flag--block__one">
                                 <img src={greatBritan} alt="img"/>
                                 <h2>Great Britain</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/germany"}>
+                        <NavLink to={"/Germany"}>
                             <div className="flag--block__one">
                                 <img src={germany} alt="img"/>
                                 <h2>Germany</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/holland"}>
+                        <NavLink to={"/Holland"}>
                             <div className="flag--block__one">
                                 <img src={holland} alt="img"/>
                                 <h2>Holland</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/ireland"}>
+                        <NavLink to={"/Ireland"}>
                             <div className="flag--block__one">
                                 <img src={ireland} alt="img"/>
                                 <h2>Ireland</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/America"}>
                             <div className="flag--block__one">
                                 <img src={spain} alt="img"/>
                                 <h2>Spain</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/America"}>
                             <div className="flag--block__one">
                                 <img src={italy} alt="img"/>
                                 <h2>Italy</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/America"}>
                             <div className="flag--block__one">
                                 <img src={canada} alt="img"/>
                                 <h2>Canada</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/America"}>
                             <div className="flag--block__one">
                                 <img src={cyprus} alt="img"/>
                                 <h2>Cyprus</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/China"}>
                             <div className="flag--block__one">
                                 <img src={China} alt="img"/>
                                 <h2>China</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/Latvia"}>
                             <div className="flag--block__one">
                                 <img src={latvia} alt="img"/>
                                 <h2>Latvia</h2>
                             </div>
                         </NavLink>
-                        <NavLink to={"/country"}>
+                        <NavLink to={"/Latvia"}>
                             <div className="flag--block__one">
                                 <img src={latvia} alt="img"/>
                                 <h2>Latvia</h2>

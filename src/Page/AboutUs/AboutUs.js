@@ -2,8 +2,18 @@ import React from 'react';
 import './About.scss'
 import logo from './../../img/z--73.svg'
 import Team from "./Team/Team";
+import {useLanguage} from "../../components/Lang/LanguageContext";
 
 const AboutUs = () => {
+    const {language} = useLanguage()
+    const languageCard = {
+        en :{
+            about : 'About Us',
+        },
+        ru : {
+            about:'о нас\n:',
+        }
+    }
     return (
        <>
            <div id='about'>
@@ -17,9 +27,8 @@ const AboutUs = () => {
                           </div>
                       </div>
                        <div className='about--imgEs__car--tool'>
-                           <span>About Us</span>
-                           <h2>Best Education <br/>
-                               Platfoorm</h2>
+                           <span>{languageCard[language].about}</span>
+                           <h2>Best Education <br/> Platfoorm</h2>
                            <h4>Apparently we had reached a great height in <br/>
                                the atmosphere, for the sky was a dead black.</h4>
                            <p>By the same illusion which lifts the horizon of the sea to <br/>

@@ -45,11 +45,11 @@ function App() {
                            <Route path={'/aboutUs'} element={<AboutUs/>}/>
                            <Route path={'/studyAbroad'} element={<Study/>}/>
                            <Route path={'/flag'} element={<FlagCard/>}/>
-                           <Route path={'/country'} element={<Country/>}/>
+                           <Route path={'/America'} element={<Country/>}/>
                            <Route path={'/other'} element={<Other/>}/>
                            <Route path={'/ielts'} element={<Items/>}/>
                            <Route path={'/artis'} element={<Artis/>}/>
-                           <Route path={'/britain'} element={<Britain/>}/>
+                           <Route path={'/Great Britain'} element={<Britain/>}/>
                            <Route path={'/germany'} element={<German/>}/>
                            <Route path={'/holland'} element={<Holland/>}/>
                            <Route path={'/ireland'} element={<Ireland/>}/>
