@@ -10,11 +10,13 @@ import {AiFillInstagram} from "react-icons/ai"
 import {BsTelephoneXFill} from "react-icons/bs"
 import {MdEmail} from "react-icons/md"
 import {Search} from "./Search/Search";
+import {useLanguage} from "../Lang/LanguageContext";
 
 
 const Header = () => {
+    const {language, changeLanguage} = useLanguage()
     const [dashed1, setDashed1] = useState(0)
-    const [isBurgerOpen, setIsBurgerOpen] = useState(false); // Состояние для бургер-меню
+    const [isBurgerOpen, setIsBurgerOpen] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [activeBurgerMenuItem, setActiveBurgerMenuItem] = useState(null);
     const [redDotPosition, setRedDotPosition] = useState(0);
@@ -87,6 +89,9 @@ const Header = () => {
                                     window.scroll(0, 3100);
                                 }}>
                                     Contacts {redDotPosition === 4 &&
+                                    window.scroll(0, 3300);
+                                }}>
+                                   <span> Contacts </span>{redDotPosition === 4 &&
                                     <div className="red-dot"></div>}
                                 </a>
                             </div>
@@ -122,6 +127,7 @@ const Header = () => {
                                 </div>
                                 <div className="header--nav__contact">
                                     <NavLink to="/contacts">Contacts</NavLink>
+                                    <NavLink to="/message">Contacts</NavLink>
                                 </div>
                             </div>
                         )}
@@ -170,6 +176,23 @@ const Header = () => {
                                         <h3><BsTelephoneXFill/></h3>
                                         <h3><MdEmail/></h3>
                                     </div>
+                                        {/*<NavLink to="/contacts">Contacts</NavLink>*/}
+                                    </div>
+                                    {/*<div className="header--nav1__language1">*/}
+                                    {/*<NavLink to="/contacts">Contacts</NavLink>*/}
+                                    {/*</div>*/}
+                                    <div className="header--nav1__language1">
+                                        <h3>EN</h3>
+                                        <h3>RU</h3>
+                                        <h3>KG</h3>
+                                    </div>
+
+                                    <div className="header--nav1__icon">
+                                        <h3><FaTelegramPlane/></h3>
+                                        <h3><AiFillInstagram/></h3>
+                                        <h3><BsTelephoneXFill/></h3>
+                                        <h3><MdEmail/></h3>
+                                    </div>
                                 </div>
                             )
                         }
@@ -186,6 +209,9 @@ const Header = () => {
                             <select>
                                 <option>EN</option>
                                 <option>RU</option>
+                            <select onChange={(e) => changeLanguage(e.target.value)} value={language}>
+                                <option value="en">EN</option>
+                                <option value="ru">RU</option>
                             </select>
                         </div>
                     </div>
