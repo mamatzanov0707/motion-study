@@ -123,7 +123,7 @@ const Header = () => {
                                     <NavLink to="/studyAbroad">Study Abroad</NavLink>
                                 </div>
                                 <div className="header--nav__contact">
-                                    <NavLink to="/contacts">Contacts</NavLink>
+                                    <NavLink to="/message">Contacts</NavLink>
                                 </div>
                             </div>
                         )}
