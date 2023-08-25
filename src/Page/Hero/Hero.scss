@@ -47,6 +47,12 @@
       .hero--block__input {
         display: flex;
         align-items: flex-start;
+        flex-direction: column;
+        div{
+          margin-left: 20px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
         // flex-direction: column;
         div{
           margin-left: 20px;
