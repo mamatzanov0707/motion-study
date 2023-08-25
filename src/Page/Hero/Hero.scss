@@ -3,7 +3,7 @@
   padding: 5% 0;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   .input {
     display: flex;
     width: 335px;
@@ -322,7 +322,8 @@
           }
         }
         &--block {
-          left: -21px;
+          left: 11px;
+          top: 498px;
           width: 562px;
           height: 73px;
           input {
@@ -352,7 +353,6 @@
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
-        // width: 718px;
         margin-left: 100px;
         &--image {
           margin-top: 51px;
@@ -380,11 +380,11 @@
           }
         }
         &--block {
-          left: 13px;
-          width: 517px;
+          left: 69px;
+          width: 501px;
           height: 73px;
           top: 96%;
-          button{
+          button {
             padding: 13px 53px;
           }
           input {
@@ -399,11 +399,10 @@
         margin-top: 40px;
         width: 335px;
         height: 37px;
-        border: 1px solid  #5609BB;
+        border: 1px solid #5609bb;
         border-radius: 8px;
         input {
-          margin: 37px 0 0px 40px
-
+          margin: 37px 0 0px 40px;
         }
       }
     }
@@ -415,6 +414,7 @@
     .container {
       .input {
         margin-left: 69px;
+        width: 395px;
         input {
           margin: 33px 0 0px 0px;
         }
@@ -423,7 +423,7 @@
         margin-left: 7px;
         &--title {
           h4 {
-            margin-left: -92px;
+            margin-left: -137px;
             font-size: 20px;
           }
           h1 {
@@ -431,8 +431,8 @@
             font-size: 40px;
           }
           p {
-            width: 455px;
-            margin-left: -168px;
+            width: 429px;
+            margin-left: -134px;
           }
           video {
             display: none;
@@ -483,35 +483,35 @@
             margin-top: -15px;
           }
         }
-        // &--block{
-        //   width: 390px;
-        //   height: 153px;
-        //   display: block;
-        //   font-size: 92%;
-        //   border-radius: 46px;
-        //   left: 35px;
-        //   // margin-left: 20%;
-        //   &__input{
+        &--block{
+          width: 390px;
+          height: 153px;
+          display: block;
+          font-size: 92%;
+          border-radius: 46px;
+          left: 35px;
+          // margin-left: 20%;
+          &__input{
 
-        //     align-items: center;
-        //     display: flex;
-        //     justify-content: center;
-        //         span{
-        //           margin-left: 40%;
-        //         }
-        //         input{
-        //           margin-left: 40%;
-        //         }
-        //       }
-        //   img{
-        //     width: 8%;
-        //     // margin-left: 30%;
-        //     // margin-top:5% ;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+                span{
+                  margin-left: 40%;
+                }
+                input{
+                  margin-left: 40%;
+                }
+              }
+          img{
+            width: 8%;
+            // margin-left: 30%;
+            // margin-top:5% ;
 
-        //     // position: absolute;
-        //   }
+            // position: absolute;
+          }
 
-        // }
+        }
         &--image {
           width: 360px;
           height: 335px;
@@ -542,8 +542,8 @@
       margin-left: 28%;
     }
     #hero .container .hero--block__input input {
-      margin-left: 28%;
-      font-size: 10px;
+      // margin-left: 28%;
+      // font-size: 10px;
     }
 
     #hero .container .hero--block {
@@ -614,12 +614,13 @@
   #hero .container .hero--block {
     /* display: flex; */
     width: 308px;
-    height: 188px;
+    height: 195px;
     left: -23px;
     top: 698px;
   }
   #hero .hero .hero--block .hero--block__input span {
     font-size: 14px;
+    margin-left: 9px;
   }
   #hero .container .hero--block img {
     position: absolute;
@@ -629,6 +630,7 @@
   }
   #hero .container .hero--block input {
     font-size: 97%;
+    margin-left: 9px;
     &::placeholder {
       font-size: 15px;
     }
@@ -638,7 +640,7 @@
   }
   #hero .container .hero {
     margin-left: 23px;
-}
+  }
 }
 
 @media (max-width: 320px) {
@@ -701,7 +703,7 @@
   }
   #hero .container .hero {
     margin-left: 54px;
-}
+  }
   // #hero .container .hero--title h4 {
   //   margin-left: -308px;
   //   font-size: 17px;
