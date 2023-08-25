@@ -102,3 +102,139 @@
     }
   }
 }
+
+
+@media (max-width: 1024px) {
+  #country .country__cards {
+    width: 942px;
+  }
+  #country .country__cards--ones__one3 {
+    margin-left: 94px;
+  }
+  #britain .country__cards--card {
+    width: 919px;
+  }
+  #britain .country__cards--card img {
+    width: 226px;
+    margin-left: -39px;
+  }
+}
+
+@media (max-width: 992px) {
+  #britain h1 {
+    margin-left: -50px;
+}
+#britain .select {
+  margin: 20px 0 30px -86px;
+}
+#britain .country__cards--card {
+    width: 850px;
+    margin: 30px -47px
+}
+#britain .country__cards--card img {
+  width: 222px;
+  margin-left: -27px;
+}
+}
+
+@media (max-width: 768px) {
+    #britain h1 {
+      margin-left: -14px;
+}
+#britain .select {
+  margin: 20px 0 30px -53px;
+}
+#britain .country__cards--card {
+  width: 693px;
+  margin: 30px -9px;
+  height: 173px;
+}
+  #britain .country__cards--card img {
+    width: 185px;
+    height: 138px;
+    margin-left: -7px;
+}
+#britain .country__cards--card__one1 h3 {
+  padding: 10px 0;
+  color: #1AA2EE;
+  font-size: 20px;
+}
+#britain .country__cards--card__one1 {
+  margin-left: 0px;
+}
+}
+
+@media (max-width: 550px) {
+  #britain .select {
+    margin: 20px 0 30px -43px;
+    flex-wrap: wrap;
+}
+#britain .select select {
+  margin: 0 0 20px 0;
+}
+#britain h1 {
+  margin-left: -2px;
+}
+#britain .country__cards--card {
+  width: 278px;
+  margin: 26px 110px;
+  height: 377px;
+  flex-direction: column;
+}
+#britain .country__cards--card__one1 h3 {
+    padding: 0px 0px;
+    color: #1AA2EE;
+    font-size: 20px;
+    margin-left: -79px;
+}
+#britain .country__cards--card__one1 h4 {
+  margin-left: -77px;
+}
+#britain .country__cards--card__one2 h3 {
+  padding: 0px 0;
+  margin-left: -91px;
+}
+#britain .country__cards--card__one2 h4 {
+  margin-left: -93px;
+}
+#britain .country__cards--card__one3 h4 {
+  margin-left: -88px;
+}
+#britain .country__cards--card__one3 h3 {
+  padding: 0px 0;
+  margin-left: -84px;
+}
+}
+
+@media (max-width: 450px) {
+  #britain .country__cards--card {
+    margin: 26px 62px;
+  }
+}
+
+@media (max-width: 400px) {
+  #britain h1 {
+    margin-left: 34px;
+}
+#britain .select {
+  margin: 20px 0 30px 44px;
+}
+#britain .country__cards--card {
+  margin: 26px 38px;
+}
+#britain .country__cards--card img {
+  width: 274px;
+  margin-left: -2px;
+}
+}
+@media (max-width: 320px) {
+  #britain h1 {
+    margin-left: 16px;
+}
+#britain .select {
+  margin: 20px 0 30px 13px;
+}
+#britain .country__cards--card {
+  margin: 26px 0px;
+}
+}

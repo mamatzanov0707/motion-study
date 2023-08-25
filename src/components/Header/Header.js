@@ -116,7 +116,7 @@ const Header = () => {
                                 }}>
                                     {translate[language].contact} {redDotPosition === 4 &&
                                     window.scroll(0, 3300)
-                                }}>
+                                }
                                    <span> Contacts </span>{redDotPosition === 4 &&
                                     <div className="red-dot"></div>}
                                 </a>
@@ -185,23 +185,23 @@ const Header = () => {
                                          onClick={() => setIsBurgerOpen(false)}>
                                         <a onClick={() => window.scroll(0, 3100)}>Contacts</a>
 
-                                        <NavLink to="/contacts">Contacts</NavLink>
+                                        {/* <NavLink to="/contacts">Contacts</NavLink> */}
                                     </div>
-                                    <div className="header--nav1__language1">
+                                    {/* <div className="header--nav1__language1">
                                         <NavLink to="/contacts">Contacts</NavLink>
-                                    </div>
-                                    <div className="header--nav1__language1">
+                                    </div> */}
+                                    {/* <div className="header--nav1__language1">
                                         <h3>EN</h3>
                                         <h3>RU</h3>
                                         <h3>KG</h3>
-                                    </div>
+                                    </div> */}
 
-                                    <div className="header--nav1__icon">
+                                    {/* <div className="header--nav1__icon">
                                         <h3><FaTelegramPlane/></h3>
                                         <h3><AiFillInstagram/></h3>
                                         <h3><BsTelephoneXFill/></h3>
                                         <h3><MdEmail/></h3>
-                                    </div>
+                                    </div> */}
 
                                     {/*<div className="header--nav1__language1">*/}
                                     {/*<NavLink to="/contacts">Contacts</NavLink>*/}
